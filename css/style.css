@@ -1,0 +1,757 @@
+/* $Id$ */
+
+/* ---------- Overall Specifications ---------- */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.4em;
+  font-size: 0.8em;
+  word-wrap: break-word;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1.0em 0 0.5em;
+  font-weight: inherit;
+}
+h1 {
+  font-size: 140%;
+  color: #000;
+}
+h2 {
+  font-size: 120%;
+}
+p {
+  margin: 1.2em 0 0.6em;
+}
+del {
+  text-decoration: line-through;
+}
+.block ul {
+  margin: 0;
+  padding: 0 0 0.25em;
+}
+ul.contextual-links {
+  font-size: 90%;
+  font-family: Arial, sans-serif;
+}
+
+
+/* ------------------ Header ------------------ */
+
+#skip-link {
+  position: absolute;
+  text-indent: -9999px;
+}
+#header {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+#header a {
+  color: #fff;
+}
+#header a:hover,
+#header a:focus {
+  color: #b5b7b9;
+}
+#header a:active {
+  color: #adb0bf;
+}
+#header #logo {
+  float: left;
+  padding: 15px 30px 15px 0;
+}
+#header #name-and-slogan {
+  padding-top: 38px;
+  margin-bottom: 30px;
+}
+#header #site-name {
+  font-size: 200%;
+  color: #686868;
+}
+#header h1#site-name {
+  margin: 0;
+}
+#header #site-name a {
+  font-weight: normal;
+}
+#header #site-slogan {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 7px;
+  font-size: 100%;
+  word-spacing: 0.1em;
+  font-style: italic;
+}
+/* Menus when in the header region. */
+#header div.block-menu,
+#header div#block-system-main-menu,
+#header div#block-system-secondary-menu {
+  height: 1.1em;
+  margin: 10px 0;
+  font-size: 120%;
+  float: left;
+  width: 75%;
+}
+#header .block ul, /* any menu block in the header region */
+#header .block li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#header .block-menu li a,
+#header #block-system-main-menu li a,
+#header #block-system-secondary-menu li a {
+  float: left;
+  padding: 0 12px;
+  display: block;
+  border-right: 1px solid #555;
+}
+#header .block-menu li.first a,
+#header #block-system-main-menu li.first a,
+#header #block-system-secondary-menu li.first a {
+  padding-left: 0;
+}
+#header .block-menu li.last a,
+#header #block-system-main-menu li.last a,
+#header #block-system-secondary-menu li.last a {
+  padding-right: 0;
+  border-right: none;
+}
+#header #block-search-form { /* search block in the header region */
+  float: right;
+  width: 24%;
+  margin: 8px 0;
+}
+#header #block-user-login { /* login block in the Header Region */
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 2%;
+  background: #464748;
+  color: #fff;
+  float: right;
+  font-size: 13px;
+  padding: 4px 10px 5px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 80%;
+}
+#header #block-user-login a {
+  color: #fff;
+  font-size: 90%;
+}
+#header #block-user-login .form-item label {
+  display: inline;
+  font-weight: normal;
+}
+#header #block-user-login .form-item {
+  display: inline;
+  font-weight: normal;
+}
+#header #block-user-login .form-text {
+  margin-right: 5px;
+}
+#header #block-user-login .form-item label .form-required {
+  display: none;
+}
+#header #block-user-login div.item-list,
+#header #block-user-login .item-list ul {
+  display: inline;
+}
+#header #block-user-login .item-list ul li {
+  display: inline;
+  margin: 0 5px 0 15px;
+}
+#header #block-user-login div.item-list {
+  margin-top: 5px;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 130%;
+  text-transform: none;
+}
+#header #block-user-login .userbox {
+  margin-left: 10px;
+}
+#header #block-user-login input.form-submit {
+  color: #fff;
+  background: #929599;
+  border: 1px solid #73767c;
+  padding: 1px;
+  text-transform: uppercase;
+  margin-top: 1px;
+  position: relative;
+  display: inline;
+}
+#header #block-user-login #user-login-form div.item-list { /* hide create new account + email replacement password links */
+  display: none;
+}
+
+
+/* --------------- Main Navigation ------------ */
+
+#navigation {
+  padding: 5x 15px;
+  clear: both;
+}
+#navigation a {
+  color: #d9d9d9;
+  padding: 0.6em 1em 0.4em;
+}
+#navigation ul {
+  padding: 2px 0;
+}
+#navigation ul.links {
+  font-size: 105%;
+  padding: 0.6em 0.6em 4px;
+}
+#navigation ul.links li a {
+  color: #333;
+  text-shadow: 0 1px #eee;
+  background: #ccc;
+  background: rgba(255, 255, 255, 0.78);
+  border-top-left-radius: 8px;
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -khtml-border-radius-topleft: 8px;
+  border-top-right-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -khtml-border-radius-topright: 8px;
+  border-bottom: 1px solid #fff;
+}
+#navigation ul.links li a:hover,
+#navigation ul.links li a:focus {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
+}
+#navigation ul.links li a:active {
+  background: #b3b3b3;
+  background: rgba(255, 255, 255, 1);
+}
+#navigation ul.links li.active-trail a {
+  background: #fff;
+  background: rgba(255, 255, 255, 1.0);
+  border-bottom: none;
+}
+.featured #navigation ul.links li.active-trail a {
+  background: #f0f0f0;
+  background: rgba(240, 240, 240, 1.0);
+}
+#navigation ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0.6em 0 0.4em;
+}
+#navigation ul.links li.first {
+  padding-left: 2px;
+}
+
+
+/* ------------------- Main ------------------- */
+
+#main {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 120%:
+}
+.field-type-image {
+  float: left;
+  padding: 2px 20px 5px 0;
+}
+
+
+/* ----------------- Featured ----------------- */
+
+#featured {
+  text-align: center;
+  font-size: 180%;
+  font-weight: normal;
+  line-height: 1.4em;
+  padding: 50px 0 45px;
+  margin: 0;
+  background: #f0f0f0;
+  border-bottom: 1px solid #e7e7e7;
+  text-shadow: 1px 1px #fff;
+}
+#featured p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ----------------- Content ------------------ */
+
+#content {
+/*  border-right:1px solid #E9E9E9;*/
+}
+#block-system-main {
+  font-size: 115%;
+  line-height: 1.5em;
+}
+h1#page-title {
+  font-size: 220%;
+  line-height: 1.2em;
+}
+#block-system-main h2 {
+  margin-bottom: 2px;
+  font-size: 137%;
+  line-height: 1.4em;
+}
+#block-system-main .node-teaser h2 a {
+  color: #181818;
+}
+#block-system-main .node-teaser {
+  border-bottom: 1px solid #d3d7d9;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+#block-system-main .node-teaser .content {
+  font-size: 92%;
+  line-height: 1.65em;
+  color: #3b3b3b;
+  clear: none;
+}
+#block-system-main div.user-picture img {
+  margin-left: 20px;
+}
+#block-system-main .meta {
+  font-family: Arial, sans-serif;
+  font-size: 80%;
+  color: #a8a8a8;
+  margin-bottom: -5px;
+}
+* html #block-system-main .meta {
+  margin-bottom:10px;
+} 
+*:first-child+html #block-system-main .meta {
+  margin-bottom:10px;
+} 
+#block-system-main .submitted .user-picture img {
+  float:left;
+  height:20px;
+  margin-top:1px;
+  margin-right:5px;
+  margin-bottom:0;
+  margin-left:0;
+}
+#block-system-main img {
+  margin: 0 0 15px;
+  border: 1px solid #d3d7d9;
+}
+#block-system-main .node-teaser img {
+  margin: 0;
+}
+#block-system-main div.field-name-taxonomy-tags div.field-label,
+#block-system-main div.field-name-taxonomy-tags div.field-items,
+#block-system-main div.field-name-taxonomy-tags div.field-item {
+  font-family: Arial, sans-serif;
+  display: inline;
+  float: left;
+  padding-right: 10px;
+  font-weight: normal;
+}
+#block-system-main div.field-name-taxonomy-tags div.field-label {
+  font-size: 86%;
+  color: #68696b;
+}
+#block-system-main div.field-name-taxonomy-tags div.field-items,
+#block-system-main div.field-name-taxonomy-tags div.field-item {
+  font-size: 95%;
+}
+#block-system-main div.field-name-taxonomy-tags a:hover,
+#block-system-main div.field-name-taxonomy-tags a:focus {
+  text-decoration: underline;
+}
+#block-system-main .link-wrapper {
+  margin-left: 236px;
+}
+#block-system-main ul.links {
+  font-family: Arial, sans-serif;
+  color: #68696b;
+  font-size: 80%;
+}
+
+
+/* ----------------- Comments ----------------- */
+
+#comment-wrapper {
+  border-top: 1px solid #d3d7d9;
+  padding-top: 15px;
+}
+#comment-wrapper h2.comments {
+  margin-bottom: 1em;
+}
+.node-teaser #comment-wrapper {
+  display: none;
+}
+#comment-wrapper div.user-picture img {
+  margin-left: 0;
+}
+#comments .comment {
+  margin-bottom: 20px;
+}
+#comments .attribution {
+  float: left;
+  width: 110px;
+}
+#comments .attribution img {
+  margin: 0;
+  border: 1px solid #d3d7d9;
+}
+#comments .submitted p {
+  margin: 4px 0;
+  font-family: Arial, sans-serif;
+  font-size: 110%;
+  line-height: 1.2em;
+}
+#comments .submitted .comment-time {
+  font-size: 70%;
+  color: #68696b;
+}
+#comments .content {
+  font-size: 90%;
+}
+#comments .comment-arrow {
+  background: url(../images/comment-arrow.gif);
+  height: 40px;
+  width: 20px;
+  margin-left: -45px;
+  margin-top: 10px;
+  position: absolute;
+}
+#comments .comment-text {
+  margin-left: 140px;
+  padding: 10px 25px;
+  border: 1px solid #d3d7d9;
+}
+#comments .indented {
+  margin-left: 40px;
+}
+
+
+/* ------------------ Sidebar ----------------- */
+
+.sidebar .block {
+  padding: 15px 20px;
+  margin: 20px 0;
+  border: 1px solid #dcdcdc;
+  -webkit-border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  background: #f0f0f0;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(#f7f7f7), to(#f0f0f0));
+  background-image: -moz-linear-gradient(0% 0%, #f7f7f7 0%, #f0f0f0 95%);
+}
+* html .sidebar .block,
+*:first-child+html .sidebar .block {
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f7f7f7,endColorstr=#f0f0f0);
+  zoom: 1;
+}
+.sidebar h2 {
+  margin: 0 0 0.5em;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 5px;
+  text-shadow: 0 1px 0 #fff;
+}
+.sidebar tbody {
+  border: none;
+}
+.sidebar tr.even,
+.sidebar tr.odd {
+  background: none;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+/* ----------------- Triptych ----------------- */
+
+#triptych-wrapper {
+  background: #fafafa url(../images/triptych-background.jpg) repeat-x top center;
+  border-top: 1px solid #d3d7d9;
+}
+#triptych h2 {
+  color: #000;
+  font-size: 200%;
+  margin-bottom: 1em;
+  text-align: center;
+  text-shadow: 0px 1px 0 #fff;
+}
+
+
+/* ------------------ Footer ------------------ */
+
+#footer-wrapper {
+  background: #161617 url(images/footer-background.jpg) repeat-x top center;
+  color: #7c7e84;
+  font-size: 90%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#footer-wrapper a {
+  color: #7c7e84;
+}
+#footer-wrapper a:hover,
+#footer-wrapper a:focus {
+  color: #b7b8b8;
+}
+#footer-wrapper div.block {
+  margin: 20px 0;
+  border: 1px solid #38393b;
+  padding: 10px;
+}
+#footer-wrapper #block-system-main-menu,
+#footer-wrapper #block-system-secondary-menu,
+#footer-wrapper .section div.block-menu,
+#footer-wrapper #footer .block {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#footer-wrapper ul#secondary-menu {
+  margin-top: 1em;
+}
+#footer-columns h2 {
+  border-bottom: 1px solid #38393b;
+  color: #7c7e84;
+  font-size: 104%;
+  margin-bottom: 0;
+  padding-bottom: 3px;
+  text-transform: uppercase;
+}
+#footer-columns ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0
+}
+#footer-columns li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#footer-columns li a {
+  display: block;
+  border-bottom: 1px solid #38393b;
+  line-height: 1.2em;
+  padding: 0.8em 2px 0.8em 20px;
+  text-indent: -15px;
+}
+#footer-columns li a:hover,
+#footer-columns li a:focus {
+  background: #1f1f21;
+}
+#footer {
+  font-size: 92%;
+  letter-spacing: 0.2px;
+  color: #5a5b5d;
+  margin-top: 30px;
+  border-top: 1px solid #333436;
+}
+#footer p {
+  text-align: center;
+}
+#footer .region {
+  margin-top: 20px;
+}
+#footer a:link,
+#footer a:visited {
+  color: #787878;
+}
+#footer a:hover,
+#footer a:focus {
+  color: #b0b0b0;
+}
+#footer a:active {
+  color: #fff;
+}
+#footer .block {
+  clear: both;
+}
+#footer ul, /* any menu block in the header region */
+#footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#footer li a {
+  float: left;
+  padding: 0 12px;
+  display: block;
+  border-right: 1px solid #555;
+}
+#footer li.first a {
+  padding-left: 0;
+}
+#footer li.last a {
+  padding-right: 0;
+  border-right: none;
+}
+
+
+/* --------------- System Tabs  --------------- */
+
+div.tabs {
+  margin-bottom: 20px;
+}
+div.tabs ul.primary {
+  padding: 10px 0 3px 1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div.tabs ul.primary li a {
+  border-top-left-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -khtml-border-radius-topleft: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -khtml-border-radius-topright: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+}
+
+
+/* ---------------- Messages  ----------------- */
+
+#messages {
+  padding: 20px 0 5px;
+  margin: 0 auto;
+  width: 900px;
+}
+div.messages {
+  border: 1px solid #bbb;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 15px;
+  margin: 0 0 15px 0;
+}
+div.status {
+  background: #fcf6be;
+}
+div.warning {
+  background: #ffd; /* Drupal default */
+}
+div.error {
+  background: #fcc; /* Drupal default */
+}
+
+
+/* -------------- User Profile   -------------- */
+
+.profile .user-picture {
+  float: none;
+}
+
+/* ---------------- Buttons    ---------------- */
+
+input.form-submit,
+a.button {
+  cursor: pointer;
+  padding: 4px 17px;
+  margin-bottom: 1em;
+  color: #5a5a5a;
+  text-align: center;
+  font-weight: normal;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #b4b4b4;
+  border-left-color: #D2D2D2;
+  border-right-color: #D2D2D2;
+  background: url(../images/buttons.png) 0 0 repeat-x;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  font-size: 90%;
+}
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:focus,
+a.button:active {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+
+/* -------------- Form Elements   ------------- */
+
+fieldset {
+  background: #fbfbfb none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  padding: 10px 25px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -khtml-border-radius: 4px;
+}
+fieldset.collapsed {
+  background: #fff;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -khtml-border-radius: 0;
+}
+input {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px;
+  margin: 2px 0;
+  padding: 4px;
+}
+input.form-submit:hover,
+input.form-submit:focus {
+  background: #dedede;
+}
+#user-profile-form input#edit-submit {
+  margin-left: 500px;
+}
+.password-suggestions ul li {
+  margin-left: 1.2em;
+}
+.form-item {
+  margin-bottom: 1em;
+  margin-top: 2px;
+}
+.form-item label {
+  font-size: 90%;
+}
+fieldset .description {
+  margin-top: 5px;
+  line-height: 1.4em;
+  color: #3c3c3c;
+  font-style: italic;
+}
+
+/* -------------- Other Overrides ------------- */
+
+div.password-suggestions {
+  border: 0;
+}
+.ui-widget-overlay {
+  background: #222222;
+  opacity: 0.7;
+}
+
+.sample-regions-link {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+}
+
+/* -------------- Shortcut Links ------------- */
+.add-or-remove-shortcuts {
+  position: absolute;
+  right: 0.25em;
+  top: 0.25em;
+}
+.overlay .add-or-remove-shortcuts {
+  position: static;
+  right: auto;
+  top: auto;
+}
