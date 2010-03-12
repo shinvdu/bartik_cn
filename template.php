@@ -21,6 +21,9 @@ function bartik_preprocess_html(&$variables) {
     || !empty($variables['page']['footer_fourthcolumn'])) {
     $variables['classes_array'][] = 'footer-columns';
   }
+
+  // Add conditional CSS for IE7 and below.
+  drupal_add_css(path_to_theme() . '/css/ie.css', array('weight' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
 }
 
 /**
