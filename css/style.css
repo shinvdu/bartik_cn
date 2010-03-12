@@ -43,6 +43,9 @@ ul.contextual-links {
   font-size: 90%;
   font-family: Arial, sans-serif;
 }
+tr.odd {
+  background-color: #dddddd;
+}
 
 
 /* ------------------ Header ------------------ */
