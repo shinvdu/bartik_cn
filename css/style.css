@@ -201,7 +201,7 @@ tr.odd {
 /* --------------- Main Navigation ------------ */
 
 #navigation {
-  padding: 5x 15px;
+  padding: 5px 15px;
   clear: both;
 }
 #navigation a {
@@ -263,7 +263,7 @@ tr.odd {
 #main {
   margin-top: 20px;
   margin-bottom: 40px;
-  font-size: 120%:
+  font-size: 120%;
 }
 .field-type-image {
   float: left;
