@@ -658,22 +658,6 @@ div.tabs ul.primary li a {
   margin: 0 auto;
   width: 900px;
 }
-div.messages {
-  border: 1px solid #bbb;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 15px;
-  margin: 0 0 15px 0;
-}
-div.status {
-  background: #fcf6be;
-}
-div.warning {
-  background: #ffd; /* Drupal default */
-}
-div.error {
-  background: #fcc; /* Drupal default */
-}
-
 
 /* -------------- User Profile   -------------- */
 
