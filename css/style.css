@@ -656,7 +656,6 @@ div.tabs ul.primary li a {
 #messages {
   padding: 20px 0 5px;
   margin: 0 auto;
-  width: 900px;
 }
 
 /* -------------- User Profile   -------------- */
@@ -774,9 +773,6 @@ div.password-suggestions {
 /**
  * Admin-specific Theming
  */
-.page-admin #messages div.section {
-  width: 90%;
-}
 .page-admin #block-system-main img {
   margin-right: 15px; 
 }
