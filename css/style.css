@@ -8,10 +8,17 @@ body {
   line-height: 1.4em;
   font-size: 0.8em;
   word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
 }
 a:link,
 a:visited {
   text-decoration: none;
+}
+:focus {
+  outline: 0;
 }
 h1,
 h2,
@@ -45,6 +52,33 @@ ul.contextual-links {
 }
 tr.odd {
   background-color: #dddddd;
+}
+img {
+  outline: 0;
+}
+
+
+/* ------------------ Reset Styles ------------------ */
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
 }
 
 
