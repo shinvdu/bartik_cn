@@ -407,7 +407,7 @@ h1#page-title {
   text-decoration: underline;
 }
 #block-system-main .link-wrapper {
-  margin-left: 236px; /* LTR */
+  text-align: center;
 }
 #block-system-main ul.links {
   font-family: Arial, sans-serif;
