@@ -16,7 +16,7 @@
 
 #content {
   display: inline;
-  float: left;
+  float: left; /* LTR */
   position: relative;
 }
 
@@ -26,38 +26,38 @@ body.one-sidebar #content {
 
 body.sidebar-second #content {
   /* open side */
-  margin-left: 15px;
+  margin-left: 15px; /* LTR */
   /* sidebar side */
-  margin-right: 5px;
-  padding-right: 20px;
+  margin-right: 5px; /* LTR */
+  padding-right: 20px; /* LTR */
 }
 
 body.sidebar-first #content {
   /* sidebar side */
-  margin-left: 5px;
-  padding-left: 20px;
+  margin-left: 5px; /* LTR */
+  padding-left: 20px; /* LTR */
   /* open side */
-  margin-right: 15px;
+  margin-right: 15px; /* LTR */
 }
 
 body.two-sidebars #content {
   width: 375px;
-  margin-right: 5px;
-  padding-right: 20px;
-  margin-left: 5px;
-  padding-left: 20px;
+  margin-right: 5px; /* LTR */
+  padding-right: 20px; /* LTR */
+  margin-left: 5px; /* LTR */
+  padding-left: 20px; /* LTR */
 }
 
 .sidebar {
   display: inline;
-  float: left;
+  float: left; /* LTR */
   position: relative;
-  width: 225px;  
+  width: 225px;
 }
 
 #sidebar-first {
-  margin-left: 25px;
-  margin-right: 15px;
+  margin-left: 25px; /* LTR */
+  margin-right: 15px; /* LTR */
 }
 
 #breadcrumb {
@@ -69,7 +69,7 @@ body.two-sidebars #content {
 #triptych-middle,
 #triptych-last {
   display: inline;
-  float: left;
+  float: left; /* LTR */
   position: relative;
   width: 290px;
   margin: 20px 15px 30px;
@@ -88,7 +88,7 @@ body.two-sidebars #content {
 #footer-fourthcolumn {
   width: 210px;
   display: inline;
-  float: left;
+  float: left; /* LTR */
   margin-left: 15px;
   margin-right: 15px;
   position: relative;
