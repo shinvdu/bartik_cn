@@ -248,18 +248,18 @@ q {
 }
 #navigation ul.links li a {
   color: #333;
-  text-shadow: 0 1px #eee;
   background: #ccc;
   background: rgba(255, 255, 255, 0.78);
-  border-top-left-radius: 8px;
-  -webkit-border-top-left-radius: 8px;
-  -moz-border-radius-topleft: 8px;
-  -khtml-border-radius-topleft: 8px;
-  border-top-right-radius: 8px;
-  -webkit-border-top-right-radius: 8px;
-  -moz-border-radius-topright: 8px;
-  -khtml-border-radius-topright: 8px;
   border-bottom: 1px solid #fff;
+  text-shadow: 0 1px #eee;
+  -khtml-border-radius-topleft: 8px;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -khtml-border-radius-topright: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
 }
 #navigation ul.links li a:hover,
 #navigation ul.links li a:focus {
@@ -473,17 +473,16 @@ h1#page-title {
 /* ------------------ Sidebar ----------------- */
 
 .sidebar .block {
-  padding: 15px 20px;
-  margin: 20px 0;
-  border: 1px solid #dcdcdc;
-  -webkit-border: 1px solid #e0e0e0;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -khtml-border-radius: 4px;
   background: #f0f0f0;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(#f7f7f7), to(#f0f0f0));
   background-image: -moz-linear-gradient(0% 0%, #f7f7f7 0%, #f0f0f0 95%);
+  border: 1px solid #dcdcdc;
+  padding: 15px 20px;
+  margin: 20px 0;
+  -khtml-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 .sidebar h2 {
   margin: 0 0 0.5em;
@@ -639,18 +638,18 @@ div.tabs ul.primary {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 div.tabs ul.primary li a {
-  border-top-left-radius: 6px;
-  -webkit-border-top-left-radius: 6px;
-  -moz-border-radius-topleft: 6px;
-  -khtml-border-radius-topleft: 6px;
-  border-top-right-radius: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -moz-border-radius-topright: 6px;
-  -khtml-border-radius-topright: 6px;
-  padding-top: 3px;
-  padding-bottom: 3px;
   color: #000;
+  padding-bottom: 3px;
+  padding-top: 3px;
   text-shadow: 0 1px 0 #fff;
+  -khtml-border-radius-topleft: 6px;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -khtml-border-radius-topright: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 
@@ -671,22 +670,23 @@ div.tabs ul.primary li a {
 
 input.form-submit,
 a.button {
-  cursor: pointer;
-  padding: 4px 17px;
-  margin-bottom: 1em;
-  color: #5a5a5a;
-  text-align: center;
-  font-weight: normal;
-  font-family: "Lucida Grande", Verdana, sans-serif;
+  background: url(../images/buttons.png) 0 0 repeat-x;
   border: 1px solid #e4e4e4;
   border-bottom: 1px solid #b4b4b4;
   border-left-color: #D2D2D2;
   border-right-color: #D2D2D2;
-  background: url(../images/buttons.png) 0 0 repeat-x;
+  color: #5a5a5a;
+  cursor: pointer;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  font-size: 90%;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 4px 17px;
+  -khtml-border-radius: 15px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  font-size: 90%;
+  border-radius: 15px;
 }
 a.button:link,
 a.button:visited,
@@ -703,17 +703,17 @@ fieldset {
   background: #fbfbfb none repeat scroll 0 0;
   border: 1px solid #ccc;
   padding: 10px 25px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   -khtml-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 fieldset.collapsed {
   background: #fff;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 input {
   margin: 2px 0;
