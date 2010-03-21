@@ -18,7 +18,8 @@ regions[highlight] = Highlighted
 
 regions[featured] = Featured
 regions[content] = Content
-regions[sidebar_first] = Sidebar
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
 
 regions[triptych_first] = Triptych first
 regions[triptych_middle] = Triptych middle

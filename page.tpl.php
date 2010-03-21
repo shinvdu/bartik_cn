@@ -156,6 +156,13 @@
       <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
 
+    <?php if ($page['sidebar_first']): ?>
+      <div id="sidebar-first" class="column sidebar"><div class="section">
+        <?php print render($page['sidebar_first']); ?>
+      </div></div> <!-- /.section, /#sidebar-first -->
+    <?php endif; ?>
+
+
     <div id="content" class="column"><div class="section">
       <?php if ($page['highlight']): ?><div id="highlight"><?php print render($page['highlight']); ?></div><?php endif; ?>
       <a id="main-content"></a>
@@ -182,10 +189,10 @@
 
     </div></div> <!-- /.section, /#content -->
 
-    <?php if ($page['sidebar_first']): ?>
-      <div id="sidebar-first" class="column sidebar"><div class="section">
-        <?php print render($page['sidebar_first']); ?>
-      </div></div> <!-- /.section, /#sidebar-first -->
+    <?php if ($page['sidebar_second']): ?>
+      <div id="sidebar-second" class="column sidebar"><div class="section">
+        <?php print render($page['sidebar_second']); ?>
+      </div></div> <!-- /.section, /#sidebar-second -->
     <?php endif; ?>
 
   </div></div> <!-- /#main, /#main-wrapper -->
