@@ -1,0 +1,179 @@
+/* $Id$ */
+
+/* ---------- RTL overrides ---------- */
+
+/* ------------------ Reset Styles ------------------ */
+
+caption,
+th,
+td {
+  text-align: right; 
+}
+
+/* ------------------ Header ------------------ */
+
+#header #logo {
+  float: right; 
+  padding: 15px 0 15px 30px; 
+}
+/* Menus when in the header region. */
+#header div.block-menu,
+#header div#block-system-main-menu,
+#header div#block-system-secondary-menu {
+  float: right; 
+}
+#header .block-menu li a,
+#header #block-system-main-menu li a,
+#header #block-system-secondary-menu li a {
+  float: right; 
+  border-left: 1px solid #555; 
+  border-right: none; 
+}
+#header .block-menu li.first a,
+#header #block-system-main-menu li.first a,
+#header #block-system-secondary-menu li.first a {
+  padding-right: 0; 
+  padding-left: 12px; 
+}
+#header .block-menu li.last a,
+#header #block-system-main-menu li.last a,
+#header #block-system-secondary-menu li.last a {
+  padding-left: 0; 
+  padding-right: 12px; 
+  border-left: none; 
+}
+#header #block-search-form { /* search block in the header region */
+  float: left; 
+}
+#header #block-user-login { /* login block in the Header Region */
+  left: 2%; 
+  right: auto; 
+  float: left; 
+}
+#header #block-user-login .form-text {
+  margin-left: 5px; 
+}
+#header #block-user-login .item-list ul li {
+  margin: 0 15px 0 5px; 
+}
+#header #block-user-login .userbox {
+  margin-right: 10px; 
+}
+
+/* --------------- Main Navigation ------------ */
+
+#navigation ul.links li.first {
+  padding-right: 2px; 
+  padding-left: 0; 
+}
+
+/* ------------------- Main ------------------- */
+
+.field-type-image {
+  float: right; 
+  padding: 2px 0 5px 20px; 
+}
+
+/* ----------------- Content ------------------ */
+
+#content {
+/*  border-left: 1px solid #E9E9E9; */
+}
+#block-system-main div.user-picture img {
+  margin-right: 20px; 
+  margin-left: 0; 
+}
+#block-system-main .submitted .user-picture img {
+  float: right; 
+  margin-left: 5px; 
+  margin-right: 0; 
+}
+#block-system-main div.field-name-taxonomy-tags div.field-label,
+#block-system-main div.field-name-taxonomy-tags div.field-items,
+#block-system-main div.field-name-taxonomy-tags div.field-item {
+  float: right; 
+  padding-left: 10px; 
+  padding-right: 0; 
+}
+#block-system-main .link-wrapper {
+  margin-right: 236px; 
+  margin-left: 0; 
+}
+
+/* ----------------- Comments ----------------- */
+
+#comment-wrapper div.user-picture img {
+  margin-right: 0; 
+}
+#comments .attribution {
+  float: right; 
+}
+#comments .comment-arrow {
+  background: url(../images/comment-arrow-rtl.gif); 
+  margin-right: -45px; 
+}
+#comments .comment-text {
+  margin-right: 140px; 
+  margin-left: 0; 
+}
+#comments .indented {
+  margin-right: 40px; 
+  margin-left: 0; 
+}
+
+/* ------------------ Footer ------------------ */
+
+#footer-columns ul {
+  padding-right: 0; 
+}
+#footer-columns li a {
+  padding: 0.8em 20px 0.8em 2px; 
+}
+#footer li a {
+  float: right; 
+  border-left: 1px solid #555; 
+  border-right: none; 
+}
+#footer li.first a {
+  padding-right: 0; 
+  padding-left: 12px; 
+}
+#footer li.last a {
+  padding-left: 0; 
+  padding-right: 12px; 
+  border-left: none; 
+}
+
+/* --------------- System Tabs  --------------- */
+
+div.tabs ul.primary {
+  padding: 10px 1em 3px 0; 
+}
+
+/* -------------- Form Elements   ------------- */
+
+#user-profile-form input#edit-submit {
+  margin-right: 500px; 
+  margin-left: 0; 
+}
+.password-suggestions ul li {
+  margin-right: 1.2em; 
+  margin-left: 0; 
+}
+
+/* -------------- Shortcut Links ------------- */
+.add-or-remove-shortcuts {
+  left: 0.25em; 
+  right: auto; 
+}
+.overlay .add-or-remove-shortcuts {
+  left: auto; 
+}
+
+/**
+ * Admin-specific Theming
+ */
+.page-admin #block-system-main img {
+  margin-left: 15px;  
+  margin-right: 0;  
+}

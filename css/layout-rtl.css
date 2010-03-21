@@ -1,0 +1,27 @@
+/* $Id$ */
+
+/**
+ * Basic layout styles RTL overrides
+ */
+#content {
+  float: right; 
+  margin-right: 15px; 
+  margin-left: 5px; 
+  padding:0 0 0 20px; 
+}
+#sidebar-first {
+  float: right; 
+  margin-right: 25px; 
+  margin-left: 15px; 
+}
+#triptych-first,
+#triptych-middle,
+#triptych-last {
+  float: right; 
+}
+#footer-firstcolumn,
+#footer-secondcolumn,
+#footer-thirdcolumn,
+#footer-fourthcolumn {
+  float: right; 
+}
