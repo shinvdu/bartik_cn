@@ -719,11 +719,17 @@ fieldset.collapsed {
   -khtml-border-radius: 0;
 }
 input {
-  border-color: #ccc;
-  border-style: solid;
-  border-width: 1px;
   margin: 2px 0;
   padding: 4px;
+}
+textarea.form-textarea,
+select.form-select {
+  padding: 4px;
+}
+input.form-text,
+textarea.form-textarea,
+select.form-select {
+  border: 1px solid #ccc;
 }
 input.form-submit:hover,
 input.form-submit:focus {
