@@ -1,8 +1,6 @@
 <?php
 // $Id$
 
-// Last conformed to D7 Head - v 1.3 2009/11/16 05:34:24 webchick
-
 /**
  * @file
  * Default theme implementation to display the basic html structure of a single
