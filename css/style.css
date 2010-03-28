@@ -353,9 +353,6 @@ h1#page-title {
   color: #3b3b3b;
   clear: none;
 }
-#block-system-main div.user-picture img {
-  margin-left: 20px; /* LTR */
-}
 #block-system-main .meta {
   font-family: Arial, sans-serif;
   font-size: 80%;

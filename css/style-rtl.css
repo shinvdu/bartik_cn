@@ -79,10 +79,6 @@ td {
 #content {
 /*  border-left: 1px solid #E9E9E9; */
 }
-#block-system-main div.user-picture img {
-  margin-right: 20px; 
-  margin-left: 0; 
-}
 #block-system-main .submitted .user-picture img {
   float: right; 
   margin-left: 5px; 
