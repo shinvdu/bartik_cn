@@ -58,9 +58,12 @@ img {
 /* ------------------ Reset Styles ------------------ */
 
 table {
-  border-collapse: separate;
   border-spacing: 0;
   width: 100%;
+}
+tr.even,
+tr.odd {
+  border-bottom: 0;
 }
 caption,
 th,
