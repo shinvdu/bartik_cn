@@ -454,7 +454,7 @@ h1#page-title {
   font-size: 90%;
 }
 #comments .comment-arrow {
-  background: url(../images/comment-arrow.gif); /* LTR */
+  background: url(../images/comment-arrow.png); /* LTR */
   height: 40px;
   width: 20px;
   margin-left: -45px; /* LTR */
