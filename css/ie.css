@@ -6,3 +6,6 @@
 input.form-text {
   font-family: sans-serif;
 }
+#password-strength-text {
+  margin-top: 0;
+}
