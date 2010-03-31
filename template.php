@@ -55,12 +55,6 @@ function bartik_process_page(&$variables) {
     // If toggle_site_slogan is FALSE, the site_slogan will be empty, so we rebuild it.
     $variables['site_slogan'] = filter_xss_admin(variable_get('site_slogan', ''));
   }
-
-  // Load sample content if requested.
-  if (theme_get_setting('bartik_sample_regions') && user_access('administer themes')) {
-    include_once './' . drupal_get_path('theme', 'bartik') . '/theme-settings.php';
-    _bartik_process_page($variables);
-  }
 }
 
 /**
