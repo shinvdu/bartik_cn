@@ -34,7 +34,7 @@ h2 {
   font-size: 120%;
 }
 p {
-  margin: 1.2em 0 0.6em;
+  margin: 0 0 1.8em;
 }
 del {
   text-decoration: line-through;
@@ -345,7 +345,10 @@ ul.tips {
 /* ----------------- Content ------------------ */
 
 #content {
-/*  border-right: 1px solid #E9E9E9; /* LTR */ */
+/*  border-right: 1px solid #E9E9E9; /* LTR */
+}
+.content {
+  margin-top: 1em;
 }
 #block-system-main {
   font-size: 115%;
