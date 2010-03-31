@@ -689,7 +689,7 @@ div.tabs ul.primary li a {
 
 input.form-submit,
 a.button {
-  background: url(../images/buttons.png) 0 0 repeat-x;
+  background: #fff url(../images/buttons.png) 0 0 repeat-x;
   border: 1px solid #e4e4e4;
   border-bottom: 1px solid #b4b4b4;
   border-left-color: #D2D2D2;
