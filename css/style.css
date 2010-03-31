@@ -751,9 +751,6 @@ input.form-submit:hover,
 input.form-submit:focus {
   background: #dedede;
 }
-#user-profile-form input#edit-submit {
-  margin-left: 500px; /* LTR */
-}
 .password-suggestions ul li {
   margin-left: 1.2em; /* LTR */
 }
