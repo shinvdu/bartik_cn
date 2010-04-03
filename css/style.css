@@ -856,14 +856,32 @@ div.password-suggestions {
 
 
 /* ---------- Poll ----------- */
-.poll {
-  margin: 1em 0;	
+.node .poll {
+  margin: 2em 0;
 }
-
+.node .poll #edit-choice {
+  margin: 0 0 1.5em;
+}
 .poll .vote-form {
   text-align: left; /* LTR */
 }
-
 .poll .vote-form .choices {
   margin: 0;
+}
+.poll .percent {
+  font-size:86%;
+  font-style:italic;
+  margin-bottom:3em;
+  margin-top:-3em;
+}
+.poll .total {
+  font-size:95%;
+  font-style:italic;
+  margin:-0.5em 0 20px;
+  text-align:right; /* LTR */
+}
+#poll-cancel-form {
+  text-align: center;
+  margin-top:1em;
+  font-size:80%;
 }

@@ -228,3 +228,12 @@ div.tabs ul.primary {
   margin-left: 15px;
   margin-right: 0;
 }
+
+
+/* ---------- Poll ----------- */
+.poll .vote-form {
+  text-align: right; /* LTR */
+}
+.poll .total {
+  text-align:left; /* LTR */
+}
