@@ -853,3 +853,17 @@ div.password-suggestions {
  display: block;
  float: none;
 }
+
+
+/* ---------- Poll ----------- */
+.poll {
+  margin: 1em 0;	
+}
+
+.poll .vote-form {
+  text-align: left; /* LTR */
+}
+
+.poll .vote-form .choices {
+  margin: 0;
+}
