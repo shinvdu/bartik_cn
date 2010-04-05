@@ -90,6 +90,8 @@ function bartik_preprocess_block(&$variables) {
   if ($variables['block']->position_last){
     $variables['classes_array'][] = 'last';
   }
+  // Set "odd" & "even" classes.
+  $variables['classes_array'][] = $variables['block']->position%2 == 0 ? 'even' : 'odd';
 }
 
 /**
