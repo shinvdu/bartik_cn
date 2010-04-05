@@ -83,4 +83,38 @@ function bartik_preprocess_block(&$variables) {
   if ($variables['block']->region == 'header' && ($variables['block']->module == 'menu' || $variables['block']->module == 'user' && $variables['block']->delta == 'login')) {
     $variables['title_attributes_array']['class'][] = 'element-invisible';
   }
+  // Set "first" and "last" classes.
+  if ($variables['block']->position_first){
+    $variables['classes_array'][] = 'first';
+  }
+  if ($variables['block']->position_last){
+    $variables['classes_array'][] = 'last';
+  }
+}
+
+/**
+ * Implements hook_page_alter.
+ */
+function bartik_page_alter(&$page) {
+  // Determine the position and count of blocks within regions.
+  foreach ($page as &$region) {
+    // Make sure this is a "region" element.
+    if (is_array($region) && isset($region['#region'])) {
+      $i = 0;
+      foreach ($region as &$block) {
+        // Make sure this is a "block" element.
+        if (is_array($block) && isset($block['#block'])) {
+          $block['#block']->position = $i++;
+        }
+      }
+      $region['#block_count'] = $i++;
+      // Set a flag for "first" and "last" blocks.
+      foreach ($region as &$block) {
+        if (is_array($block) && isset($block['#block']->position)) {
+          $block['#block']->position_first = $block['#block']->position == 0;
+          $block['#block']->position_last = $block['#block']->position == $region['#block_count']-1;
+        }
+      }
+    }
+  }
 }
