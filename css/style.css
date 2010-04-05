@@ -529,12 +529,51 @@ h1#page-title {
 }
 #triptych h2 {
   color: #000;
-  font-size: 200%;
-  margin-bottom: 1em;
-  text-align: center;
+  font-size: 194%;
+  margin-bottom: .8em;
   text-shadow: 0px 1px 0 #fff;
+  text-align: center;
+  line-height:1.2em;
 }
-
+#triptych .block {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #dfdfdf;
+}
+#triptych .block.last {
+  border-bottom: none;
+}
+#triptych .block ul li,
+#triptych .block ol li {
+  list-style: none;
+}
+#triptych .block ul,
+#triptych .block ol {
+  padding-left: 0;
+}
+#triptych #block-user-login .form-text {
+  width: 205px;
+}
+#triptych #block-user-online p {
+  margin-bottom: 0;
+}
+#triptych #block-node-syndicate h2 {
+  overflow: hidden;
+  width: 0;
+  height: 0
+}
+#triptych-last #block-node-syndicate {
+  text-align: right;
+}
+#triptych #block-search-form .form-type-textfield input {
+  width: 205px;
+}
+#triptych-middle #block-system-powered-by {
+  text-align: center;
+}
+#triptych-last #block-system-powered-by {
+  text-align: right;
+}
 
 /* ------------------ Footer ------------------ */
 
