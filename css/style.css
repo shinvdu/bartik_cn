@@ -397,13 +397,6 @@ h1#page-title {
   margin-bottom:0;
   margin-left: 0; /* LTR */
 }
-#block-system-main img {
-  margin: 0 0 15px;
-  border: 1px solid #d3d7d9;
-}
-#block-system-main .node-teaser img {
-  margin: 0;
-}
 #block-system-main div.field-name-taxonomy-tags div.field-label,
 #block-system-main div.field-name-taxonomy-tags div.field-items,
 #block-system-main div.field-name-taxonomy-tags div.field-item {
@@ -433,7 +426,11 @@ h1#page-title {
   color: #68696b;
   font-size: 80%;
 }
-
+#block-system-main .field-type-image img,
+#block-system-main .user-picture img {
+  border: 1px solid #d3d7d9;
+  margin:0;
+}
 
 /* ----------------- Comments ----------------- */
 
@@ -871,7 +868,9 @@ div.password-suggestions {
 .page-admin-structure-block-demo .block-region {
  color: #000000;
 }
-
+.page-admin #admin-dblog img {
+  margin: 0 5px;
+}
 
 /* ---------- Overlay layout styles ----------- */
 

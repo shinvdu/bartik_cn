@@ -221,14 +221,6 @@ div.tabs ul.primary {
   left: auto;
 }
 
-/**
- * Admin-specific Theming
- */
-.page-admin #block-system-main img {
-  margin-left: 15px;
-  margin-right: 0;
-}
-
 
 /* ---------- Poll ----------- */
 .poll .vote-form {
