@@ -722,7 +722,7 @@ div.messages {
   padding:1.2em 2em 1em;
   margin: 8px 0;
 }
-div.notice, div.notice {
+div.status, tr.status {
   background-color:#c7ffc0;
   border: 1px solid #89d47f;
 }
