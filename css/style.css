@@ -937,12 +937,14 @@ div.password-suggestions {
 .poll .total {
   font-size:95%;
   font-style:italic;
-  margin:-0.5em 0 0;
   text-align:right; /* LTR */
   clear: both;
 }
 .poll .form-item label {
   font-size:100%;
+}
+.form-radio {
+  margin-right: 4px;
 }
 .node .poll {
   margin:1.8em 0 0;
