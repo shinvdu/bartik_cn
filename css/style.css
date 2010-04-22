@@ -927,17 +927,26 @@ div.password-suggestions {
   font-size:86%;
   font-style:italic;
   margin-bottom:3em;
-  margin-top:-3em;
+  margin-top:-3.2em;
+  float:right;
+  text-align:right;
+}
+.poll .text {
+  clear:right;
 }
 .poll .total {
   font-size:95%;
   font-style:italic;
-  margin:-0.5em 0 20px;
+  margin:-0.5em 0 0;
   text-align:right; /* LTR */
+  clear: both;
 }
-/*
-#poll-cancel-form {
-  margin-top:1em;
-  font-size:80%;
+.poll .form-item label {
+  font-size:100%;
 }
-*/
+.node .poll {
+  margin:1.8em 0 0;
+}
+.node .poll #edit-choice {
+  margin:0 0 1.2em;
+}
