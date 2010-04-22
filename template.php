@@ -1,10 +1,6 @@
 <?php
 // $Id$
 
-drupal_set_message('hello world', 'warning');
-drupal_set_message('hello world', 'error');
-drupal_set_message('hello world', 'notice');
-
 /**
  * Add body classes if certain regions have content.
  */
