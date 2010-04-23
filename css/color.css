@@ -7,6 +7,9 @@ body,
 #block-system-main {
   color: #3b3b3b;
 }
+body {
+  background-color: #ffffff;
+}
 #header {
   background-color: #000000;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000000), to(#3d3d3d));
@@ -21,4 +24,7 @@ a:focus {
 }
 a:active {
   color: #23aeff;
+}
+.sidebar .block {
+  background-color: #feffff;
 }

@@ -2,7 +2,8 @@
 
 /* ---------- Overall Specifications ---------- */
 
-body {
+body,
+#preview {
   background-color: #fff;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.4em;
@@ -22,18 +23,27 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+#preview h1,
+#preview h2,
+#preview h3,
+#preview h4,
+#preview h5,
+#preview h6 {
   margin: 1.0em 0 0.5em;
   font-weight: inherit;
 }
-h1 {
+h1,
+#preview h1 {
   font-size: 140%;
   color: #000;
 }
-h2 {
+h2,
+#preview h1 {
   font-size: 120%;
 }
-p {
+p,
+#preview p {
   margin: 0 0 1.8em;
 }
 del {
@@ -42,7 +52,8 @@ del {
 tr.odd {
   background-color: #dddddd;
 }
-img {
+img,
+#preview img {
   outline: 0;
 }
 
@@ -107,11 +118,13 @@ ul.tips {
   position: absolute;
   text-indent: -9999px;
 }
-#header {
+#header,
+#preview #preview-header {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
 }
-#header a {
+#header a,
+#preview #preview-header a {
   color: #fff;
 }
 #header a:hover,
@@ -121,22 +134,27 @@ ul.tips {
 #header a:active {
   color: #adb0bf;
 }
-#header #logo {
+#header #logo,
+#preview #preview-header #preview-logo {
   float: left; /* LTR */
   padding: 15px 30px 15px 0; /* LTR */
 }
-#header #name-and-slogan {
+#header #name-and-slogan,
+#preview #preview-header #preview-name-and-slogan {
   padding-top: 38px;
   margin-bottom: 30px;
 }
-#header #site-name {
+#header #site-name,
+#preview #preview-header #preview-site-name {
   font-size: 200%;
   color: #686868;
 }
-#header h1#site-name {
+#header h1#site-name,
+#preview #preview-header h1#preview-site-name {
   margin: 0;
 }
-#header #site-name a {
+#header #site-name a,
+#preview-header #preview-site-name a {
   font-weight: normal;
 }
 #header #site-slogan {
@@ -313,7 +331,8 @@ ul.tips {
 
 /* ------------------- Main ------------------- */
 
-#main {
+#main,
+#preview #preview-main {
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -350,15 +369,21 @@ ul.tips {
 .content {
   margin-top: 1em;
 }
-#block-system-main {
+#block-system-main,
+#preview #preview-block-system-main {
   font-size: 115%;
   line-height: 1.5em;
 }
-h1#page-title {
+body.page-admin-appearance-settings-bartik #block-system-main {
+  font-size: 100%;
+}
+h1#page-title,
+#preview h1#preview-page-title {
   font-size: 220%;
   line-height: 1.2em;
 }
-#block-system-main h2 {
+#block-system-main h2,
+#preview #preview-block-system-main h2 {
   margin-bottom: 2px;
   font-size: 137%;
   line-height: 1.4em;
@@ -488,7 +513,6 @@ h1#page-title {
   margin-left: 40px; /* LTR */
 }
 
-
 /* ------------------ Sidebar ----------------- */
 
 .sidebar .block {
@@ -496,7 +520,8 @@ h1#page-title {
   padding: 15px 20px;
   margin: 20px 0;
 }
-.sidebar h2 {
+.sidebar h2,
+#preview .sidebar h2 {
   margin: 0 0 0.5em;
   border-bottom: 1px solid #d6d6d6;
   padding-bottom: 5px;

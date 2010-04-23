@@ -1,55 +1,63 @@
 <?php
 // $Id$
 
+// Put the logo path into JavaScript for the Preview JS.
+drupal_add_js(array('color' => array('logo' => theme_get_setting('logo', 'bartik'))), 'setting');
+
 $info = array(
   // Available colors and color labels used in theme.
   'fields' => array(
-    'base' => t('Base color'),
+    'bg' => t('Main background'),
     'link' => t('Link color'),
     'top' => t('Header top'),
     'bottom' => t('Header bottom'),
     'text' => t('Text color'),
+    'sidebar' => t('Sidebar background'),
   ),
   // Pre-defined color schemes.
   'schemes' => array(
     'default' => array(
       'title' => t('Bartik (Default)'),
       'colors' => array(
-        'base' => '#ffffff',
+        'bg' => '#ffffff',
         'link' => '#0073b6',
         'top' => '#000000',
         'bottom' => '#3d3d3d',
         'text' => '#3b3b3b',
+        'sidebar' => '#feffff',
       ),
     ),
     'Blue Lagoon' => array(
       'title' => t('Blue Lagoon'),
       'colors' => array(
-        'base' => '#ffffff',
+        'bg' => '#ffffff',
         'link' => '#0073b6',
         'top' => '#2385c2',
         'bottom' => '#5ab5ee',
-        'text' => '3b3b3b',
+        'text' => '#3b3b3b',
+        'sidebar' => '#feffff',
       ),
     ),
     'Plum' => array(
       'title' => t('Plum'),
       'colors' => array(
-        'base' => '#f6eecc',
+        'bg' => '#f6eecc',
         'link' => '#6b2454',
         'top' => '#461453',
         'bottom' => '#6b2454',
-        'text' => '#2c2333f',
+        'text' => '#2c233f',
+        'sidebar' => '#f0f0f0',
       ),
     ),
     'Fresh' => array(
       'title' => t('Fresh'),
       'colors' => array(
-        'base' => '#f6ffff',
+        'bg' => '#f6ffff',
         'link' => '#087095',
         'top' => '#78b91a',
         'bottom' => '#5b8b15',
         'text' => '#585858',
+        'sidebar' => '#feffff',
       ),
     ),
   ),
@@ -89,6 +97,8 @@ $info = array(
   // Preview files.
   'preview_image' => 'color/preview.png',
   'preview_css' => 'color/preview.css',
+  'preview_js' => 'color/preview.js',
+  'preview_html' => 'color/preview.html',
 
   // Base file for image generation.
   'base_image' => 'color/base.png',
