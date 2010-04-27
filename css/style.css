@@ -926,6 +926,9 @@ div.password-suggestions {
  display: block;
  float: none;
 }
+.overlay #messages {
+  width: auto;
+}
 
 
 /* ---------- Poll ----------- */
