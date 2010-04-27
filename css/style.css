@@ -866,6 +866,14 @@ fieldset .description {
   font-style: italic;
 }
 
+/* Animated throbber */
+html.js input.form-autocomplete {
+  background-position: 100% 4px; /* LTR */
+}
+html.js input.throbbing {
+  background-position: 100% -16px; /* LTR */
+}
+
 /* -------------- Other Overrides ------------- */
 
 div.password-suggestions {
