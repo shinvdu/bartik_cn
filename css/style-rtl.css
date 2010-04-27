@@ -212,6 +212,14 @@ div.tabs ul.primary {
   margin-left: 0;
 }
 
+/* Animated throbber */
+html.js input.form-autocomplete {
+  background-position: 1% 4px; /* LTR */
+}
+html.js input.throbbing {
+  background-position: 1% -16px; /* LTR */
+}
+
 /* -------------- Shortcut Links ------------- */
 .add-or-remove-shortcuts {
   left: 0.25em;
