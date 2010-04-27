@@ -913,6 +913,11 @@ div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
 }
 
 /* Configuration */
+div.admin .right,
+div.admin .left {
+  width: 49%;
+  margin: 0;
+}
 div.admin-panel {
   background: #fbfbfb;
   border: 1px solid #ccc;
@@ -928,6 +933,9 @@ div.admin-panel dt {
 }
 div.admin-panel dd {
   margin: 0 0 10px;
+}
+div.admin-panel .description {
+  margin: 0 0 14px 7px;
 }
 /* ---------- Overlay layout styles ----------- */
 
