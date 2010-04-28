@@ -22,8 +22,9 @@ function bartik_preprocess_html(&$variables) {
     $variables['classes_array'][] = 'footer-columns';
   }
 
-  // Add conditional CSS for IE7 and below.
+  // Add conditional stylesheets for IE
   drupal_add_css(path_to_theme() . '/css/ie.css', array('weight' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
+  drupal_add_css(path_to_theme() . '/css/ie6.css', array('weight' => CSS_THEME, 'browsers' => array('IE' => 'IE 6', '!IE' => FALSE), 'preprocess' => FALSE));
 }
 
 /**
