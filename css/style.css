@@ -878,6 +878,10 @@ fieldset .description {
   font-style: italic;
 }
 
+.form-actions {
+  padding-top: 10px;
+}
+
 /* Animated throbber */
 html.js input.form-autocomplete {
   background-position: 100% 4px; /* LTR */
