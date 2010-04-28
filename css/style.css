@@ -345,10 +345,6 @@ ul.tips {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-.field-type-image {
-  float: left; /* LTR */
-  padding: 2px 20px 5px 0; /* LTR */
-}
 
 
 /* ----------------- Featured ----------------- */
