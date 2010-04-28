@@ -1008,3 +1008,38 @@ div.admin-panel .description {
 .node .poll #edit-choice {
   margin:0 0 1.2em;
 }
+
+/* ---------- Color Form ----------- */
+
+.color-form #placeholder {
+  float: right; /* LTR */
+  width: 195px;
+}
+.color-form .form-item {
+  border: 1px solid #fbfbfb;
+  margin: 0;
+  padding: .5em;
+  position: relative;
+  max-width: 350px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.color-form .form-item label {
+  float: left; /* LTR */
+  font-size: 1em;
+  width: 145px;
+}
+.color-form .form-item.item-selected {
+  background-color: #eeeeee;
+  border: 1px solid #cfcfcf;
+}
+.color-form #palette .lock {
+  position: absolute;
+  top: 5px;
+  left: -20px; /* LTR */
+}
+.color-form #preview {
+  font-size: .85em;
+}
