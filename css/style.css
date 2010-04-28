@@ -1020,8 +1020,14 @@ div.admin-panel .description {
 /* ---------- Color Form ----------- */
 
 .color-form #placeholder {
-  float: right; /* LTR */
+  position: static;
   width: 195px;
+}
+.overlay .color-form #placeholder {
+  position: absolute;
+}
+.color-form #palette {
+  margin-left: 20px;  /* LTR */
 }
 .color-form .form-item {
   border: 1px solid #fbfbfb;
@@ -1037,7 +1043,7 @@ div.admin-panel .description {
 .color-form .form-item label {
   float: left; /* LTR */
   font-size: 1em;
-  width: 145px;
+  width: 150px;
 }
 .color-form .form-item.item-selected {
   background-color: #eeeeee;

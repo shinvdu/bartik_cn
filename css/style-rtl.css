@@ -235,12 +235,14 @@ html.js input.throbbing {
 
 /* ---------- Color Form ----------- */
 
-.color-form #placeholder {
-  float: left; /* LTR */
+.color-form #palette {
+  margin-left: 0;
+  margin-right: 20px;
 }
 .color-form .form-item label {
-  float: right; /* LTR */
+  float: right;
 }
 .color-form #palette .lock {
-  right: -20px; /* LTR */
+  right: -20px;
+  left: 0;
 }
