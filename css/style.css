@@ -57,6 +57,34 @@ img,
   outline: 0;
 }
 
+/* ------------------ Fonts ------------------ */
+
+body,
+#preview,
+#header #site-slogan,
+.ui-widget {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#header,
+#footer-wrapper,
+#preview #preview-header,
+ul.contextual-links,
+ul.links,
+ul.primary,
+div.field-type-taxonomy-term-reference,
+div.messages,
+div.meta,
+p.comment-time {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input,
+textarea,
+select,
+a.button {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; 
+}
 
 /* ------------------ Reset Styles ------------------ */
 
@@ -102,7 +130,6 @@ background-color: #DDD;
 }
 ul.contextual-links {
   font-size: 90%;
-  font-family: Arial, sans-serif;
 }
 ul.menu li {
   margin: 0;
@@ -129,7 +156,6 @@ ul.tips {
 }
 #header,
 #preview #preview-header {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
 }
 #header a,
@@ -167,7 +193,6 @@ ul.tips {
   font-weight: normal;
 }
 #header #site-slogan {
-  font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 7px;
   font-size: 100%;
   word-spacing: 0.1em;
@@ -256,7 +281,6 @@ ul.tips {
 #header #block-user-login div.item-list {
   margin-top: 5px;
   font-style: italic;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 130%;
   text-transform: none;
 }
@@ -408,7 +432,6 @@ h1#page-title,
   clear: none;
 }
 #block-system-main .meta {
-  font-family: Arial, sans-serif;
   font-size: 80%;
   color: #a8a8a8;
   margin-bottom: -5px;
@@ -427,10 +450,9 @@ h1#page-title,
   margin-bottom:0;
   margin-left: 0; /* LTR */
 }
-#block-system-main div.field-name-taxonomy-tags div.field-label,
-#block-system-main div.field-name-taxonomy-tags div.field-items,
-#block-system-main div.field-name-taxonomy-tags div.field-item {
-  font-family: Arial, sans-serif;
+#block-system-main div.field-type-taxonomy-term-reference div.field-label,
+#block-system-main div.field-type-taxonomy-term-reference div.field-items,
+#block-system-main div.field-type-taxonomy-term-reference div.field-item {
   display: inline;
   float: left; /* LTR */
   padding-right: 10px; /* LTR */
@@ -490,7 +512,6 @@ h1#page-title,
 }
 #comments .submitted p {
   margin: 4px 0;
-  font-family: Arial, sans-serif;
   font-size: 110%;
   line-height: 1.2em;
 }
@@ -601,7 +622,6 @@ h1#page-title,
   background: #161617 url(../images/footer-background.jpg) repeat-x top center;
   color: #7c7e84;
   font-size: 90%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #footer-wrapper a {
   color: #7c7e84;
@@ -716,7 +736,6 @@ div.tabs {
 }
 div.tabs ul.primary {
   padding: 10px 0 3px 1em; /* LTR */
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 div.tabs ul.primary li a {
   color: #000;
@@ -741,7 +760,6 @@ div.tabs ul.primary li a {
   margin: 0 auto;
 }
 div.messages {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding:1.2em 2em 1em;
   margin: 8px 0;
 }
