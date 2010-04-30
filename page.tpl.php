@@ -150,7 +150,7 @@
     </div></div> <!-- /.section, /#featured -->
   <?php endif; ?>
 
-  <div id="main-wrapper"><div id="main" class="clearfix">
+  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
 
     <?php if ($breadcrumb): ?>
       <div id="breadcrumb"><?php print $breadcrumb; ?></div>
