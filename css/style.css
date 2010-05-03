@@ -495,13 +495,10 @@ h1#page-title,
   border-top: 1px solid #d3d7d9;
   padding-top: 15px;
 }
-#comment-wrapper h2.comments {
+#comments h2.title {
   margin-bottom: 1em;
 }
-.node-teaser #comment-wrapper {
-  display: none;
-}
-#comment-wrapper div.user-picture img {
+#comments div.user-picture img {
   margin-left: 0; /* LTR */
 }
 #comments .comment {
