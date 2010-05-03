@@ -157,7 +157,7 @@ ul.tips {
 
 #skip-link {
   position: absolute;
-  text-indent: -9999px;
+  top: -9999px;
 }
 #header,
 #preview #preview-header {
