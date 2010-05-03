@@ -733,16 +733,33 @@ h1#page-title,
 
 /* --------------- System Tabs  --------------- */
 
-div.tabs {
+.tabs {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 20px;
 }
-div.tabs ul.primary {
-  padding: 10px 0 3px 1em; /* LTR */
+.tabs ul.primary {
+  padding: 0 3px;
+  margin: 0;
+  overflow: hidden;
+  border: none;
+  background: transparent url(../images/tabs-border.png) repeat-x left bottom;
 }
-div.tabs ul.primary li a {
+.tabs ul.primary li {
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0;
+}
+.tabs ul.primary li a.active {
+  border-bottom: 1px solid #fff;
+}
+.tabs ul.primary li a {
   color: #000;
-  padding-bottom: 3px;
-  padding-top: 3px;
+  height: 1.8em;
+  line-height: 1.8em;
+  display: block;
+  float: left; /* LTR */
+  padding: 0 10px;
+  margin: 0 5px 0 0; /* LTR */
   text-shadow: 0 1px 0 #fff;
   -khtml-border-radius-topleft: 6px;
   -moz-border-radius-topleft: 6px;
@@ -752,6 +769,40 @@ div.tabs ul.primary li a {
   -moz-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
   border-top-right-radius: 6px;
+}
+.tabs ul.secondary {
+  border-bottom: none;
+}
+.tabs ul.secondary li {
+  display: inline-block;
+}
+.tabs ul.secondary li:last-child {
+  border-right: none; /* LTR */
+}
+.tabs ul.secondary li a {
+  padding: .25em .5em;
+}
+.tabs ul.secondary li a.active {
+  background: #f2f2f2;
+  border-bottom: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+}
+ul.action-links {
+  list-style: none;
+  margin: 5px;
+  padding: .5em 1em;
+}
+ul.action-links li {
+  display: inline-block;
+  margin-left: 10px;
+}
+ul.action-links li a {
+  padding-left: 15px;
+  background: url(../images/add.png) no-repeat left center;
+  margin: 0 10px 0 0;
 }
 
 

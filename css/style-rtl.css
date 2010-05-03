@@ -158,8 +158,17 @@ ul.tips {
 
 /* --------------- System Tabs  --------------- */
 
-div.tabs ul.primary {
-  padding: 10px 1em 3px 0;
+.tabs ul.primary li a {
+  float: right;
+  margin: 0 0 0 5px;
+}
+.tabs ul.secondary li:last-child {
+  border-left: none;
+}
+ul.action-links li a  {
+  background-position: right center;
+  padding-left: 0;
+  padding-right: 15px;
 }
 
 /* -------------- Form Elements   ------------- */
