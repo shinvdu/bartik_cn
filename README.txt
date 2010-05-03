@@ -1,6 +1,7 @@
 // $Id$
 
 EDITING THIS THEME
+------------------
 
 You can customize this theme to make it more your own. But do not edit this
 original copy of Bartik. Duplicate the Bartik directory (the folder) with all of
@@ -21,6 +22,7 @@ For more details, see: http://drupal.org/node/176043
 
 
 CHANGING THE COLOR.CSS FILE
+---------------------------
 
 If you adjust the colors using the color scheme tool in Bartik's theme settings,
 the color.css file will be duplicated and the new copy will be placed in
