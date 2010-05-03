@@ -13,5 +13,5 @@ input.form-text {
   height: auto;
 }
 .tabs ul.primary li a.active {
-  padding: 0 7px 0 10px;
+  padding: 0 7px 0 10px; /* LTR */
 }
