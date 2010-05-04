@@ -969,6 +969,41 @@ div.password-suggestions {
 div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
   padding: 1em;
 }
+
+
+/* --------------- Search Form ---------------- */
+
+#block-search-form .content {
+  margin-top: 0;
+}
+#block-search-form .form-item-search-block-form input {
+  width: 70%;
+}
+.region-content #block-search-form .form-item-search-block-form input,
+.region-footer #block-search-form .form-item-search-block-form input {
+  width: auto;
+}
+#block-search-form #edit-actions {
+  float: right;
+}
+.region-content #block-search-form #edit-actions,
+.region-footer #block-search-form #edit-actions {
+  float: none;
+}
+#block-search-form .form-actions {
+  padding-top: 0;
+}
+#search-block-form input.form-submit,
+#search-form input.form-submit {
+  height: 24px;
+  width: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  text-indent: -9999px;
+  border: none;
+  background: url(../images/search-button.png) no-repeat left center;
+}
+
 /* -------------- Shortcut Links -------------- */
 
 .add-or-remove-shortcuts {
