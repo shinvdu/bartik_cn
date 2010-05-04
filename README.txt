@@ -21,6 +21,12 @@ much harder, and you risk having your new theme deleted in the process.
 For more details, see: http://drupal.org/node/176043
 
 
+EDITING THE DOCTYPE
+-------------------
+
+The doctype, html, head and body tags are not in any Bartik template file. They can be found in the html.tpl.php template. Since Bartik does not do anything different with html.tpl.php than what is in Drupal core, it does not have it's own html.tpl.php file. You can find the Drupal core version in the /modules/system directory.
+
+
 CHANGING THE COLOR.CSS FILE
 ---------------------------
 
