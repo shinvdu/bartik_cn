@@ -65,10 +65,10 @@
     <div class="submitted">
       <?php print $permalink; ?>
       <p class="commenter-name">
-        <?php print t('!username ', array('!username' => $author)); ?>
+        <?php print $author; ?>
       </p>
       <p class="comment-time">
-        <?php print t('!datetime.', array('!datetime' => $created)); ?>
+        <?php print $created; ?>
       </p>
     </div>
   </div>
