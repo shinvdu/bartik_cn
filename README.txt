@@ -5,13 +5,14 @@ EDITING THIS THEME
 
 You can customize this theme to make it more your own. But do not edit this
 original copy of Bartik. Duplicate the Bartik directory (the folder) with all of
-it's files, move your new copy to the sites/all/themes directory, and edit it there.
-Be sure to rename your new theme by changing the name of the directory, changing
-the name of the .info file, and editing the text inside the .info file.
+it's files, move your new copy to the sites/all/themes directory, and edit it
+there. Be sure to rename your new theme by changing the name of the directory,
+changing the name of the .info file, editing the text inside the .info file, and
+editing the template.php to change any occurance of "bartik_" with "mytheme_".
 
 If you are running a multisite installation, you can place the new theme in in a
-subdirectory under /sites/{sitename}/themes/, where {sitename} is the name of your
-site (e.g., www.example.com).
+subdirectory under /sites/{sitename}/themes/, where {sitename} is the name of
+your site (e.g., www.example.com).
 
 If you edit this copy of Bartik, you are "hacking core". Do not hack core.
 
@@ -24,7 +25,11 @@ For more details, see: http://drupal.org/node/176043
 EDITING THE DOCTYPE
 -------------------
 
-The doctype, html, head and body tags are not in any Bartik template file. They can be found in the html.tpl.php template. Since Bartik does not do anything different with html.tpl.php than what is in Drupal core, it does not have it's own html.tpl.php file. You can find the Drupal core version in the /modules/system directory.
+The doctype, html, head and body tags are not in any Bartik template file. They
+can be found in the html.tpl.php template. Since Bartik does not do anything
+different with html.tpl.php than what is in Drupal core, it does not have its
+own html.tpl.php file. You can find the Drupal core version in the
+/modules/system directory.
 
 
 CHANGING THE COLOR.CSS FILE
