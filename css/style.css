@@ -1004,19 +1004,22 @@ div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
   background: url(../images/search-button.png) no-repeat left center;
 }
 
+
 /* -------------- Shortcut Links -------------- */
 
-.add-or-remove-shortcuts {
-  position: absolute;
-  right: 0.25em; /* LTR */
-  top: 0.25em;
+.shortcut-wrapper {
+  margin: 2.2em 0 1.1em 0; /* Same as usual h1#page-title margin. */
 }
-.overlay .add-or-remove-shortcuts {
-  position: static;
-  right: auto; /* LTR */
-  top: auto;
+.shortcut-wrapper h1#page-title {
+  float: left; /* LTR */
+  margin: 0;
 }
-
+div.add-or-remove-shortcuts {
+  padding-top: 0.9em;
+}
+.overlay div.add-or-remove-shortcuts {
+  padding-top: 0.8em;
+}
 
 /* ---------- Admin-specific Theming ---------- */
 

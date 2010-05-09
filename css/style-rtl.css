@@ -189,15 +189,13 @@ html.js input.throbbing {
   background-position: 1% -16px;
 }
 
+
 /* -------------- Shortcut Links ------------- */
 
-.add-or-remove-shortcuts {
-  left: 0.25em;
-  right: auto;
+.shortcut-wrapper h1#page-title {
+  float: right;
 }
-.overlay .add-or-remove-shortcuts {
-  left: auto;
-}
+
 
 /* ---------- Poll ----------- */
 
