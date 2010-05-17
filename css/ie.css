@@ -15,3 +15,6 @@ input.form-text {
 .tabs ul.primary li a.active {
   padding: 0 7px 0 10px; /* LTR */
 }
+#footer-wrapper #footer .block {
+  height: 100%;
+}

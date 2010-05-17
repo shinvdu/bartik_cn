@@ -645,8 +645,16 @@ h1#page-title,
   padding: 0;
   border: none;
 }
+#footer-wrapper #footer .block,
+#footer-wrapper #footer .block .content {
+  overflow: hidden;
+  margin: .5em 0;
+}
+#footer-wrapper #footer .block h2 {
+  margin: 0;
+}
 #footer-wrapper ul#secondary-menu {
-  margin-top: 1em;
+  margin: 1em 0;
 }
 #footer-columns h2 {
   border-bottom: 1px solid #38393b;
