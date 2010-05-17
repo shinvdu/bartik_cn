@@ -102,24 +102,39 @@ td {
   text-align: left; /* LTR */
   font-weight: normal;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
+blockquote{
+  background: #f7f7f7;
+  border-left: 1px solid #bbb;
+  font-style: italic;
+  margin: 1.5em 10px;
+  padding: .5em 10px;
 }
-blockquote,
-q {
-  quotes: "" "";
+blockquote:before {
+  color: #bbb;
+  content: "\201C";
+  font-size: 3em;
+  line-height: .1em;
+  margin-right: .2em;
+  vertical-align: -.4em;
+}
+blockquote:after {
+  color: #bbb;
+  content: "\201D";
+  font-size: 3em;
+  line-height: .1em;
+  vertical-align: -.45em;
+}
+blockquote :first-child {
+	display: inline;
 }
 .poll .bar .foreground {
-background-color: #666;
+  background-color: #666;
 }
 #footer-wrapper .poll .bar {
-background-color: #666;
+  background-color: #666;
 }
 #footer-wrapper .poll .bar .foreground {
-background-color: #DDD;
+  background-color: #ddd;
 }
 
 a.feed-icon {
