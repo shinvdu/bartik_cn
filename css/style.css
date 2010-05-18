@@ -807,10 +807,10 @@ h1#page-title,
 .tabs ul.secondary li a.active {
   background: #f2f2f2;
   border-bottom: none;
-  border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   -khtml-border-radius: 5px;
+  border-radius: 5px;
 }
 ul.action-links {
   list-style: none;
