@@ -1,7 +1,7 @@
 /* $Id$ */
 
 /**
- * Styles and colors that the color module will modify.
+ * Styles and colors that the color module modifies.
  */
 body {
   background-color: #161617;
@@ -29,4 +29,8 @@ a:active {
 }
 .sidebar .block {
   background-color: #feffff;
+  border-color: #d0d0d0;
+}
+#footer-wrapper {
+  background: #161617;
 }

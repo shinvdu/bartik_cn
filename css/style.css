@@ -559,7 +559,7 @@ h1#page-title,
 /* ------------------ Sidebar ----------------- */
 
 .sidebar .block {
-  border: 1px solid #d0d0d0;
+  border: 1px solid;
   padding: 15px 20px;
   margin: 20px 0;
 }
@@ -636,7 +636,6 @@ h1#page-title,
 /* ------------------ Footer ------------------ */
 
 #footer-wrapper {
-  background: #161617 url(../images/footer-background.jpg) repeat-x top center;
   color: #7c7e84;
   font-size: 90%;
 }
@@ -1107,7 +1106,6 @@ div.admin-panel .description {
 .overlay #page-title,
 .overlay #featured,
 .overlay #sidebar-first,
-.overlay #footer-wrapper,
 .overlay #triptych-wrapper {
   display: none;
 }

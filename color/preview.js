@@ -20,6 +20,11 @@
       // Sidebar background
       $('#preview .sidebar .block', form).css('background-color', $('#palette input[name="palette[sidebar]"]', form).val());
 
+      // Footer background
+      $('#preview #footer-wrapper', form).css('background-color', $('#palette input[name="palette[footer]"]', form).val());
+      
+      $('#preview .sidebar .block', form).css('border-color', $('#palette input[name="palette[sidebarborders]"]', form).val());
+
       // CSS3 Gradients
       var gradient_start = $('#palette input[name="palette[top]"]', form).val();
       var gradient_end = $('#palette input[name="palette[bottom]"]', form).val();

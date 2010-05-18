@@ -13,6 +13,8 @@ $info = array(
     'bottom' => t('Header bottom'),
     'text' => t('Text color'),
     'sidebar' => t('Sidebar background'),
+    'sidebarborders' => t('Sidebar borders'),
+    'footer' => t('Footer background'),
   ),
   // Pre-defined color schemes.
   'schemes' => array(
@@ -25,6 +27,8 @@ $info = array(
         'bottom' => '#3d3d3d',
         'text' => '#3b3b3b',
         'sidebar' => '#feffff',
+        'sidebarborders' => '#d0d0d0',
+        'footer' => '#161617',
       ),
     ),
     'Blue Lagoon' => array(
@@ -36,6 +40,8 @@ $info = array(
         'bottom' => '#5ab5ee',
         'text' => '#3b3b3b',
         'sidebar' => '#feffff',
+        'sidebarborders' => '#4377ac',
+        'footer' => '#00143d',
       ),
     ),
     'Plum' => array(
@@ -47,6 +53,8 @@ $info = array(
         'bottom' => '#6b2454',
         'text' => '#2c233f',
         'sidebar' => '#f0f0f0',
+        'sidebarborders' => '#4e2e44',
+        'footer' => '#452632',
       ),
     ),
     'Fresh' => array(
@@ -58,6 +66,8 @@ $info = array(
         'bottom' => '#5b8b15',
         'text' => '#585858',
         'sidebar' => '#feffff',
+        'sidebarborders' => '#5899b0',
+        'footer' => '#2f4016',
       ),
     ),
   ),
