@@ -83,7 +83,7 @@ input,
 textarea,
 select,
 a.button {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; 
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
 }
 
 /* ------------------ Reset Styles ------------------ */
@@ -158,7 +158,7 @@ tr th {
 tr.odd {
   background-color: #e4e4e4;
 }
-tr, 
+tr,
 tr.even {
   background-color: #efefef;
 }
@@ -727,7 +727,7 @@ h1#page-title,
 #footer-columns .content li a:hover,
 #footer-columns .content li a:focus {
   background-color: #1f1f21;
-  background-color: rgba(255,255,255,.05); 
+  background-color: rgba(255,255,255,.05);
 }
 #footer {
   font-size: 92%;
