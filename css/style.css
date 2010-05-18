@@ -788,9 +788,10 @@ h1#page-title,
   background: transparent url(../images/tabs-border.png) repeat-x left bottom;
 }
 .tabs ul.primary li {
-  display: inline-block;
+  display: block;
+  float: left; /* LTR */
   vertical-align: bottom;
-  margin: 0;
+  margin: 0 5px 0 0; /* LTR */
 }
 .tabs ul.primary li a.active {
   border-bottom: 1px solid #fff;
@@ -800,9 +801,9 @@ h1#page-title,
   height: 1.8em;
   line-height: 1.8em;
   display: block;
-  float: left; /* LTR */
+  float: left; /* not LTR */
   padding: 0 10px 3px;
-  margin: 0 1px 0 0; /* LTR */
+  margin: 0;
   text-shadow: 0 1px 0 #fff;
   -khtml-border-radius-topleft: 6px;
   -moz-border-radius-topleft: 6px;
@@ -817,7 +818,8 @@ h1#page-title,
   border-bottom: none;
 }
 .tabs ul.secondary li {
-  display: inline-block;
+  display: block;
+  float: left; /* LTR */
 }
 .tabs ul.secondary li:last-child {
   border-right: none; /* LTR */
