@@ -123,7 +123,6 @@ a.feed-icon {
   padding: 15px 0 0 0;
 }
 
-
 /* ------------------ Table Styles ------------------ */
 
 table {
@@ -171,7 +170,6 @@ tr.even {
   padding: 0 1em 0 0;
 }
 
-
 /* ------------------ List Styles ------------------ */
 
 .block ul {
@@ -195,7 +193,6 @@ ul.menu li {
 ul.tips {
   padding: 0 0 0 1.25em;  /* LTR */
 }
-
 
 /* ------------------ Header ------------------ */
 
@@ -349,7 +346,6 @@ ul.tips {
   display: none;
 }
 
-
 /* --------------- Main Navigation ------------ */
 
 #navigation {
@@ -409,7 +405,6 @@ ul.tips {
   padding-left: 2px; /* LTR */
 }
 
-
 /* ------------------- Main ------------------- */
 
 #main,
@@ -417,7 +412,6 @@ ul.tips {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-
 
 /* ----------------- Featured ----------------- */
 
@@ -436,7 +430,6 @@ ul.tips {
   margin: 0;
   padding: 0;
 }
-
 
 /* ----------------- Content ------------------ */
 
@@ -522,7 +515,7 @@ h1#page-title,
 #block-system-main .field-type-image img,
 #block-system-main .user-picture img {
   border: 1px solid #d3d7d9;
-  margin:0;
+  margin: 0;
 }
 
 /* ----------------- Comments ----------------- */
@@ -577,7 +570,6 @@ h1#page-title,
   margin-left: 40px; /* LTR */
 }
 
-
 /* ------------------ Sidebar ----------------- */
 
 .sidebar .block {
@@ -600,7 +592,6 @@ h1#page-title,
   background: none;
   border-bottom: 1px solid #d6d6d6;
 }
-
 
 /* ----------------- Triptych ----------------- */
 
@@ -655,7 +646,6 @@ h1#page-title,
 #triptych-last #block-system-powered-by {
   text-align: right;
 }
-
 
 /* ------------------ Footer ------------------ */
 
@@ -770,7 +760,6 @@ h1#page-title,
   background-color: #1f1f1f;
 }
 
-
 /* --------------- System Tabs  --------------- */
 
 .tabs {
@@ -847,7 +836,6 @@ ul.action-links li a {
   margin: 0 10px 0 0;
 }
 
-
 /* ---------------- Messages  ----------------- */
 
 #messages {
@@ -855,29 +843,27 @@ ul.action-links li a {
   margin: 0 auto;
 }
 div.messages {
-  padding:1.2em 2em 1em;
+  padding: 1.2em 2em 1em;
   margin: 8px 0;
 }
 div.status, tr.status {
-  background-color:#c7ffc0;
+  background-color: #c7ffc0;
   border: 1px solid #89d47f;
 }
 div.warning, tr.warning {
-  background-color:#fcfca7;
+  background-color: #fcfca7;
   border: 1px solid #e1c46b;
 }
 div.error, tr.error {
-  background-color:#ffcccc;
+  background-color: #ffcccc;
   border: 1px solid #fb6b6b;
 }
-
 
 /* -------------- User Profile   -------------- */
 
 .profile .user-picture {
   float: none;
 }
-
 
 /* -------------- Password Meter  ------------- */
 
@@ -900,7 +886,6 @@ div.password-confirm {
 #password-strength-text {
   margin-top: 0.2em;
 }
-
 
 /* ---------------- Buttons    ---------------- */
 
@@ -931,7 +916,6 @@ a.button:active {
   text-decoration: none;
   color: #5a5a5a;
 }
-
 
 /* -------------- Form Elements   ------------- */
 
@@ -1070,7 +1054,6 @@ div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
   padding: 1em;
 }
 
-
 /* --------------- Search Form ---------------- */
 
 #block-search-form .content {
@@ -1104,7 +1087,6 @@ div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
   background: url(../images/search-button.png) no-repeat left center;
 }
 
-
 /* -------------- Shortcut Links -------------- */
 
 .shortcut-wrapper {
@@ -1120,7 +1102,6 @@ div.add-or-remove-shortcuts {
 .overlay div.add-or-remove-shortcuts {
   padding-top: 0.8em;
 }
-
 
 /* ---------- Admin-specific Theming ---------- */
 
@@ -1167,7 +1148,6 @@ div.admin-panel .description {
   margin: 0 0 14px 7px;
 }
 
-
 /* ---------- Overlay layout styles ----------- */
 
 .overlay #main,
@@ -1196,7 +1176,6 @@ div.admin-panel .description {
   width: auto;
 }
 
-
 /* ---------- Poll ----------- */
 .node .poll {
   margin: 2em 0;
@@ -1219,7 +1198,7 @@ div.admin-panel .description {
   text-align: right;
 }
 .poll .text {
-  clear:right;
+  clear: right;
 }
 .poll .total {
   font-size: 95%;
@@ -1245,7 +1224,6 @@ div.admin-panel .description {
 #footer-wrapper .poll .bar .foreground {
   background-color: #ddd;
 }
-
 
 /* ---------- Color Form ----------- */
 
@@ -1290,4 +1268,3 @@ div.admin-panel .description {
 .overlay #preview #footer-wrapper {
   display: block;
 }
-
