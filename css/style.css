@@ -1137,6 +1137,13 @@ div.add-or-remove-shortcuts {
 .page-admin #admin-dblog img {
   margin: 0 5px;
 }
+/* Fix spacing when Seven is used in the overlay. */
+#system-theme-settings fieldset {
+  padding: 0;
+}
+#system-theme-settings fieldset .fieldset-legend {
+  margin-top: 0;
+}
 
 /* Configuration */
 div.admin .right,
