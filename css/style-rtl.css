@@ -183,6 +183,9 @@ ul.action-links li a  {
 
 /* -------------- Form Elements   ------------- */
 
+.fieldset-legend span.summary {
+  margin-left: 0;
+}
 #user-profile-form input#edit-submit {
   margin-left: 0;
 }

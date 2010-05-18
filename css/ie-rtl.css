@@ -1,5 +1,8 @@
 /* $Id$ */
 
+fieldset legend {
+  left: 6px;
+}
 .tabs ul.primary li a.active {
   padding: 0 10px 0 7px;
 }
