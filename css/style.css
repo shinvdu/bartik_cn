@@ -133,6 +133,9 @@ table {
   width: 100%;
   margin: 10px 0;
 }
+#footer-wrapper table {
+  font-size: 1em;
+}
 table tr th {
   background-color: #757575;
   border-bottom-style: none;
@@ -141,12 +144,12 @@ table thead tr th,
 table thead tr th a,
 table thead tr th a:hover {
   color: #FFF;
-  font-weight:bold;
+  font-weight: bold;
 }
 tr td,
 tr th {
   padding: 4px 9px;
-  border:1px solid #fff;
+  border: 1px solid #fff;
   text-align: left; /* LTR */
 }
 #footer-wrapper tr td,
@@ -660,15 +663,15 @@ h1#page-title,
 /* ------------------ Footer ------------------ */
 
 #footer-wrapper {
-  color: #7c7e84;
+  color: #808080;
   font-size: 90%;
 }
 #footer-wrapper a {
-  color: #7c7e84;
+  color: #a1a1a1;
 }
 #footer-wrapper a:hover,
 #footer-wrapper a:focus {
-  color: #b7b8b8;
+  color: #e2e2e2;
 }
 #footer-wrapper div.block {
   margin: 20px 0;
@@ -696,11 +699,16 @@ h1#page-title,
 }
 #footer-columns h2 {
   border-bottom: 1px solid #38393b;
-  color: #7c7e84;
   font-size: 104%;
   margin-bottom: 0;
   padding-bottom: 3px;
   text-transform: uppercase;
+}
+#footer-columns .content {
+  margin-top: 0;
+}
+#footer-columns p {
+  margin-top: 1em;
 }
 #footer-columns .content ul {
   list-style: none;
@@ -721,12 +729,12 @@ h1#page-title,
 }
 #footer-columns .content li a:hover,
 #footer-columns .content li a:focus {
-  background: #1f1f21;
+  background-color: #1f1f21;
+  background-color: rgba(255,255,255,.05); 
 }
 #footer {
   font-size: 92%;
   letter-spacing: 0.2px;
-  color: #5a5b5d;
   margin-top: 30px;
   border-top: 1px solid #333436;
 }
@@ -735,17 +743,6 @@ h1#page-title,
 }
 #footer .region {
   margin-top: 20px;
-}
-#footer a:link,
-#footer a:visited {
-  color: #787878;
-}
-#footer a:hover,
-#footer a:focus {
-  color: #b0b0b0;
-}
-#footer a:active {
-  color: #fff;
 }
 #footer .block {
   clear: both;
