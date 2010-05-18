@@ -780,8 +780,8 @@ h1#page-title,
   line-height: 1.8em;
   display: block;
   float: left; /* LTR */
-  padding: 0 10px;
-  margin: 0 5px 0 0; /* LTR */
+  padding: 0 10px 3px;
+  margin: 0 1px 0 0; /* LTR */
   text-shadow: 0 1px 0 #fff;
   -khtml-border-radius-topleft: 6px;
   -moz-border-radius-topleft: 6px;
