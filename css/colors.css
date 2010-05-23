@@ -11,6 +11,9 @@ body.overlay {
   background-color: #ffffff;
   color: #3b3b3b;
 }
+#navigation ul.links li.active-trail a {
+  background: #ffffff;
+}
 #header {
   background-color: #000000;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000000), to(#3d3d3d));

@@ -364,7 +364,6 @@ ul.tips {
   color: #333;
   background: #ccc;
   background: rgba(255, 255, 255, 0.78);
-  border-bottom: 1px solid #fff;
   text-shadow: 0 1px #eee;
   -khtml-border-radius-topleft: 8px;
   -moz-border-radius-topleft: 8px;
@@ -385,8 +384,6 @@ ul.tips {
   background: rgba(255, 255, 255, 1);
 }
 #navigation ul.links li.active-trail a {
-  background: #fff;
-  background: rgba(255, 255, 255, 1.0);
   border-bottom: none;
 }
 .featured #navigation ul.links li.active-trail a {
