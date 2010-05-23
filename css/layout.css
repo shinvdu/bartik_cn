@@ -33,6 +33,10 @@
 .two-sidebars #content {
   width: 480px;
 }
+.no-sidebars #content {
+  width: 960px;
+  float: none;
+}
 .sidebar {
   width: 240px;
 }
