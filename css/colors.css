@@ -1,8 +1,7 @@
 /* $Id$ */
 
-/**
- * Styles and colors that the color module modifies.
- */
+/* ---------- Color Module Styles ----------- */
+
 body {
   background-color: #161617;
   color: #ffffff;

@@ -111,7 +111,7 @@ function bartik_preprocess_block(&$variables) {
 }
 
 /**
- * Implements hook_page_alter.
+ * Implements hook_page_alter().
  */
 function bartik_page_alter(&$page) {
   // Determine the position and count of blocks within regions.
