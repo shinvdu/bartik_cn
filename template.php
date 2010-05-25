@@ -45,7 +45,8 @@ function bartik_process_page(&$variables) {
   if (module_exists('color')) {
     _color_page_alter($variables);
   }
-  // Always print the site name, but don't always show it visually.
+  // Always print the site name and slogan, but if they are toggled off, we'll
+  // just hide them visually.
   $variables['hide_site_name']   = theme_get_setting('toggle_name') ? FALSE : TRUE;
   $variables['hide_site_slogan'] = theme_get_setting('toggle_slogan') ? FALSE : TRUE;
   if ($variables['hide_site_name']) {
@@ -77,7 +78,8 @@ function bartik_process_page(&$variables) {
  * Override or insert variables into the maintenance page template.
  */
 function bartik_process_maintenance_page(&$variables) {
-  // Always print the site name, but don't always show it visually.
+  // Always print the site name and slogan, but if they are toggled off, we'll
+  // just hide them visually.
   $variables['hide_site_name']   = theme_get_setting('toggle_name') ? FALSE : TRUE;
   $variables['hide_site_slogan'] = theme_get_setting('toggle_slogan') ? FALSE : TRUE;
   if ($variables['hide_site_name']) {
@@ -122,17 +124,15 @@ function bartik_page_alter(&$page) {
       foreach ($region as &$block) {
         // Make sure this is a "block" element.
         if (is_array($block) && isset($block['#block'])) {
-          $block['#block']->position = $i++;
+          $block['#block']->position = ++$i;
+          // Set a flag for "first" and "last" blocks.
+          $block['#block']->position_first = ($block['#block']->position == 1);
+          $block['#block']->position_last = FALSE;
+          $last_block =& $block;
         }
       }
-      $region['#block_count'] = $i++;
-      // Set a flag for "first" and "last" blocks.
-      foreach ($region as &$block) {
-        if (is_array($block) && isset($block['#block']->position)) {
-          $block['#block']->position_first = $block['#block']->position == 0;
-          $block['#block']->position_last = $block['#block']->position == $region['#block_count']-1;
-        }
-      }
+      $last_block['#block']->position_last = TRUE;
+      $region['#block_count'] = $i;
     }
   }
 }
