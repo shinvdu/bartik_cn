@@ -109,7 +109,7 @@ function bartik_preprocess_block(&$variables) {
     $variables['classes_array'][] = 'last';
   }
   // Set "odd" & "even" classes.
-  $variables['classes_array'][] = $variables['block']->position%2 == 0 ? 'even' : 'odd';
+  $variables['classes_array'][] = $variables['block']->position % 2 == 0 ? 'odd' : 'even';
 }
 
 /**
@@ -124,9 +124,9 @@ function bartik_page_alter(&$page) {
       foreach ($region as &$block) {
         // Make sure this is a "block" element.
         if (is_array($block) && isset($block['#block'])) {
-          $block['#block']->position = ++$i;
+          $block['#block']->position = $i++;
           // Set a flag for "first" and "last" blocks.
-          $block['#block']->position_first = ($block['#block']->position == 1);
+          $block['#block']->position_first = ($block['#block']->position == 0);
           $block['#block']->position_last = FALSE;
           $last_block =& $block;
         }
