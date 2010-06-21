@@ -796,6 +796,7 @@ h1#page-title,
 }
 .tabs ul.secondary {
   border-bottom: none;
+  padding: 0.5em 0;
 }
 .tabs ul.secondary li {
   display: block;
@@ -803,6 +804,9 @@ h1#page-title,
 }
 .tabs ul.secondary li:last-child {
   border-right: none; /* LTR */
+}
+.tabs ul.secondary li:first-child {
+  padding-left: 0; /* LTR */
 }
 .tabs ul.secondary li a {
   padding: .25em .5em;
