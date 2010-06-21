@@ -6,6 +6,7 @@ body {
   background-color: #161617;
   color: #ffffff;
 }
+html,
 #page-wrapper,
 body.overlay {
   background-color: #ffffff;
