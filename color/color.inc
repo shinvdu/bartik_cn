@@ -44,6 +44,19 @@ $info = array(
         'footer' => '#06232b',
       ),
     ),
+    'Firehouse' => array(
+      'title' => t('Firehouse'),
+      'colors' => array(
+        'bg' => '#fffdf7',
+        'link' => '#9d408d',
+        'top' => '#cd2d2d',
+        'bottom' => '#cf3535',
+        'text' => '#301313',
+        'sidebar' => '#f1f1f1',
+        'sidebarborders' => '#c2c2c2',
+        'footer' => '#1f1d1c',
+      ),
+    ),
     'Plum' => array(
       'title' => t('Plum'),
       'colors' => array(
@@ -62,8 +75,8 @@ $info = array(
       'colors' => array(
         'bg' => '#f9f9f9',
         'link' => '#0aa9ab',
-        'top' => '#d0b380',
-        'bottom' => '#c2A87c',
+        'top' => '#d0eae8',
+        'bottom' => '#cbe1e0',
         'text' => '#585858',
         'sidebar' => '#feffff',
         'sidebarborders' => '#e7f0f2',
