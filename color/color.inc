@@ -41,7 +41,7 @@ $info = array(
         'text' => '#3b3b3b',
         'sidebar' => '#f6f6f2',
         'sidebarborders' => '#f9f9f9',
-        'footer' => '#06232b',
+        'footer' => '#2d1e0f',
       ),
     ),
     'Firehouse' => array(
