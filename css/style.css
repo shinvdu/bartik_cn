@@ -43,7 +43,7 @@ h2,
 }
 p,
 #preview p {
-  margin: 0 0 1.8em;
+  margin: 0 0 1.2em;
 }
 del {
   text-decoration: line-through;
@@ -74,7 +74,8 @@ div.field-type-taxonomy-term-reference,
 div.messages,
 div.meta,
 p.comment-time,
-table {
+table,
+.breadcrumb {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 input,
@@ -466,7 +467,7 @@ h1#page-title,
 }
 #block-system-main .meta {
   font-size: 80%;
-  color: #a8a8a8;
+  color: #68696b;
   margin-bottom: -5px;
 }
 * html #block-system-main .meta {
@@ -488,16 +489,16 @@ h1#page-title,
   padding-right: 10px; /* LTR */
   font-weight: normal;
 }
-#block-system-main div.field-name-taxonomy-tags div.field-label {
+#block-system-main div.field-name-field-tags div.field-label {
   font-size: 86%;
   color: #68696b;
 }
-#block-system-main div.field-name-taxonomy-tags div.field-items,
-#block-system-main div.field-name-taxonomy-tags div.field-item {
+#block-system-main div.field-name-field-tags div.field-items,
+#block-system-main div.field-name-field-tags div.field-item {
   font-size: 95%;
 }
-#block-system-main div.field-name-taxonomy-tags a:hover,
-#block-system-main div.field-name-taxonomy-tags a:focus {
+#block-system-main div.field-name-field-tags a:hover,
+#block-system-main div.field-name-field-tags a:focus {
   text-decoration: underline;
 }
 #block-system-main .link-wrapper {
@@ -509,8 +510,7 @@ h1#page-title,
 }
 #block-system-main .field-type-image img,
 #block-system-main .user-picture img {
-  border: 1px solid #d3d7d9;
-  margin: 0;
+  margin: 0 0 1em;
 }
 
 /* ----------------- Comments ----------------- */
@@ -865,6 +865,12 @@ div.warning, tr.warning {
 div.error, tr.error {
   background-color: #ffcccc;
   border: 1px solid #fb6b6b;
+}
+
+/* -------------- Breadcrumbs   -------------- */
+
+.breadcrumb {
+  font-size:92%;
 }
 
 /* -------------- User Profile   -------------- */
