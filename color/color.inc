@@ -84,7 +84,7 @@ $info = array(
         'bottom' => '#e4e2e4',
         'text' => '#585858',
         'sidebar' => '#feffff',
-        'sidebarborders' => '#e7f0f2',
+        'sidebarborders' => '#EBEBEB',
         'footer' => '#2b3037',
         'titleslogan' => '#565656',
       ),
