@@ -40,3 +40,7 @@ a:active {
 #footer-wrapper {
   background: #161617;
 }
+#header #name-and-slogan,
+#header #name-and-slogan a {
+  color: #fffeff;
+}
