@@ -211,6 +211,19 @@ html.js input.throbbing {
   background-position: 1% -16px;
 }
 
+/* Comment form */
+#comment-form .form-type-textfield label,
+#comment-form .form-type-item label {
+  float: right;
+}
+#comment-form .form-type-textfield input,
+#comment-form .form-item .username {
+  float: left;
+}
+#comment-form .form-item .description {
+  float: left;
+}
+
 /* -------------- Shortcut Links ------------- */
 
 .shortcut-wrapper h1#page-title {
