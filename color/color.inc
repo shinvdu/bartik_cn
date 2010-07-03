@@ -75,13 +75,13 @@ $info = array(
         'titleslogan' => '#fffeff',
       ),
     ),
-    'Fresh' => array(
-      'title' => t('Fresh'),
+    'Ice' => array(
+      'title' => t('Ice'),
       'colors' => array(
         'bg' => '#f9f9f9',
-        'link' => '#0aa9ab',
-        'top' => '#d0eae8',
-        'bottom' => '#cbe1e0',
+        'link' => '#a38513',
+        'top' => '#f2f0f2',
+        'bottom' => '#e4e2e4',
         'text' => '#585858',
         'sidebar' => '#feffff',
         'sidebarborders' => '#e7f0f2',
