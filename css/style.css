@@ -150,7 +150,7 @@ tr th {
 #footer-wrapper tr td,
 #footer-wrapper tr th {
   border-color: #555;
-  border-color: rgba(255,255,255,0.15);  
+  border-color: rgba(255,255,255,0.18);  
 }
 tr.odd {
   background-color: #e4e4e4;
