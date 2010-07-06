@@ -244,9 +244,7 @@ ul.tips {
   font-style: italic;
 }
 /* Menus when in the header region. */
-#header div.block-menu,
-#header div#block-system-main-menu,
-#header div#block-system-secondary-menu {
+#header div.block-menu {
   height: 1.1em;
   margin: 10px 0;
   font-size: 120%;
@@ -259,22 +257,16 @@ ul.tips {
   margin: 0;
   padding: 0;
 }
-#header .block-menu li a,
-#header #block-system-main-menu li a,
-#header #block-system-secondary-menu li a {
+#header .block-menu li a {
   float: left; /* LTR */
   padding: 0 12px;
   display: block;
   border-right: 1px solid #555; /* LTR */
 }
-#header .block-menu li.first a,
-#header #block-system-main-menu li.first a,
-#header #block-system-secondary-menu li.first a {
+#header .block-menu li.first a {
   padding-left: 0; /* LTR */
 }
-#header .block-menu li.last a,
-#header #block-system-main-menu li.last a,
-#header #block-system-secondary-menu li.last a {
+#header .block-menu li.last a {
   padding-right: 0; /* LTR */
   border-right: none; /* LTR */
 }
@@ -665,8 +657,6 @@ h1#page-title,
   border-color: rgba(255,255,255,0.1);  
   padding: 10px;
 }
-#footer-wrapper #block-system-main-menu,
-#footer-wrapper #block-system-secondary-menu,
 #footer-wrapper .section div.block-menu,
 #footer-wrapper #footer .block {
   margin: 0;
