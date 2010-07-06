@@ -65,7 +65,7 @@ body,
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 #header,
-#footer-wrapper,
+#footer,
 #preview #preview-header,
 ul.contextual-links,
 ul.links,
@@ -129,7 +129,7 @@ table {
   width: 100%;
   margin: 10px 0;
 }
-#footer-wrapper table {
+#footer table {
   font-size: 1em;
 }
 table tr th {
@@ -148,8 +148,8 @@ tr th {
   border: 1px solid #fff;
   text-align: left; /* LTR */
 }
-#footer-wrapper tr td,
-#footer-wrapper tr th {
+#footer tr td,
+#footer tr th {
   border-color: #555;
   border-color: rgba(255,255,255,0.18);  
 }
@@ -244,7 +244,7 @@ ul.tips {
   font-style: italic;
 }
 /* Menus when in the header region. */
-#header div.block-menu {
+#header .block-menu {
   height: 1.1em;
   margin: 10px 0;
   font-size: 120%;
@@ -636,42 +636,33 @@ h1#page-title,
 
 /* ------------------ Footer ------------------ */
 
-#footer-wrapper {
+#footer {
   color: #c0c0c0;
   color: rgba(255,255,255,0.65);  
   font-size: 90%;
 }
-#footer-wrapper a {
+#footer a {
   color: #fcfcfc;
   color: rgba(255,255,255,0.8);
 }
-#footer-wrapper a:hover,
-#footer-wrapper a:focus {
+#footer a:hover,
+#footer a:focus {
   color: #fefefe;
   color: rgba(255,255,255,0.95);  
   text-decoration: underline;
 }
-#footer-wrapper div.block {
+#footer .block {
   margin: 20px 0;
-  border: 1px solid #444;
-  border-color: rgba(255,255,255,0.1);  
-  padding: 10px;
-}
-#footer-wrapper .section div.block-menu,
-#footer-wrapper #footer .block {
-  margin: 0;
   padding: 0;
-  border: none;
 }
-#footer-wrapper #footer .block,
-#footer-wrapper #footer .block .content {
+#footer .block h2 {
+  margin: 0;
+}
+#footer .block .content {
   overflow: hidden;
   margin: .5em 0;
 }
-#footer-wrapper #footer .block h2 {
-  margin: 0;
-}
-#footer-wrapper ul#secondary-menu {
+#footer ul#secondary-menu {
   margin: 1em 0;
 }
 #footer-columns h2 {
@@ -745,10 +736,10 @@ h1#page-title,
   padding-right: 0; /* LTR */
   border-right: none; /* LTR */
 }
-#footer-wrapper tr.odd {
+#footer tr.odd {
   background-color: transparent;
 }
-#footer-wrapper tr.even {
+#footer tr.even {
   background-color: #2c2c2c;
   background-color: rgba(0,0,0,0.15)
 }
@@ -1272,10 +1263,10 @@ div.admin-panel .description {
 .poll .bar .foreground {
   background-color: #666;
 }
-#footer-wrapper .poll .bar {
+#footer .poll .bar {
   background-color: #666;
 }
-#footer-wrapper .poll .bar .foreground {
+#footer .poll .bar .foreground {
   background-color: #ddd;
 }
 
