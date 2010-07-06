@@ -494,7 +494,7 @@ h1#page-title,
   text-decoration: underline;
 }
 #block-system-main .link-wrapper {
-  text-align: center;
+  text-align: right;
 }
 #block-system-main ul.links {
   color: #68696b;
