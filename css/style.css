@@ -927,9 +927,10 @@ fieldset {
   background: #ffffff;
   border: 1px solid #cccccc;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
   padding: 0 0 10px;
   position: relative;
+  top: 12px; /* Offsets the negative margin of legends */
   -khtml-border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
