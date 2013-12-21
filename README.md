@@ -1,2 +1,2 @@
-bartik_cn
-=========
+结合typo.css和bartick_cn来创建一个最适合中文阅读的主题
+
