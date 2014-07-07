@@ -1,5 +1,6 @@
+; $Id$
 
-name = Bartik
+name = Bartik CN
 description = A flexible, recolorable theme with many regions.
 package = Core
 version = VERSION

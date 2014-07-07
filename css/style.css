@@ -1,48 +1,130 @@
+@charset "utf-8";
 
 /* ---------- Overall Specifications ---------- */
+html{
+  color:#333;
+  background:#fff;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  text-rendering:optimizelegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-body,
-#preview {
+body, #preview {
   background-color: #fff;
   line-height: 1.4em;
-  font-size: 0.8em;
+  font-size: 14px;
   word-wrap: break-word;
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
 }
-a:link,
-a:visited {
+a:link, a:visited {
   text-decoration: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-#preview h1,
-#preview h2,
-#preview h3,
-#preview h4,
-#preview h5,
-#preview h6 {
-  margin: 1.0em 0 0.5em;
-  font-weight: inherit;
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article, aside, details, figcaption, figure, footer, header, menu, nav, section{
+  display:block;
 }
-h1,
-#preview h1 {
-  font-size: 140%;
-  color: #000;
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio, canvas, video{
+  display:inline-block;
+  *display:inline;
+  *zoom:1;
 }
-h2,
-#preview h1 {
-  font-size: 120%;
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body, button, input, select, textarea{
+  font-size:400; 
+  font-family: Avenir, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 }
+
+/* 去除 IE6 input/button 多余的空白 */
+button, input{
+  *width:auto;
+  *overflow:visible;
+
+  /* 让 input 和 button 一样高 */
+  line-height:normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner{
+  padding:0;
+  border:0;
+}
+
+/* 去掉各Table  cell 的边距并让其边重合 */
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* IE bug fixed: th 不继承 text-align*/
+th{
+  text-align:inherit;
+}
+
+/* 去除默认边框 */
+fieldset, img{
+  border:0;
+}
+
+/* 解决 IE6-7 图片缩放锯齿问题 */
+img{
+  -ms-interpolation-mode:bicubic;
+}
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe{
+  display:block;
+}
+
+/* 块/段落引用 */
+blockquote {
+  position:relative;
+  color: #999;
+  font-weight:300;
+  font-family:Avenir, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;;
+  border-left:1px solid #1abc9c;
+  padding-left:1em;
+  margin:1em 3em 1em 2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family:Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font-weight:200;
+  color:#000;
+
+  margin-bottom:0.4em;
+  line-height:1.5;
+}
+
+h1{
+  font-size:2em;
+}
+
+h2{
+  font-size:1.8em;
+}
+
+h3{
+  font-size:1.6em;
+}
+
+h4{
+  font-size:1.4em;
+}
+
+h5, h6, .typo-h5, .typo-h6{
+  font-size:1.2em;
+}
+
 p,
 #preview p {
-  margin: 0 0 1.2em;
+  margin: 0 0 0.5em;
 }
 del {
   text-decoration: line-through;
@@ -54,6 +136,189 @@ img,
 #preview img {
   outline: 0;
 }
+
+/* 一致的 del 样式 */
+del{
+  text-decoration:line-through;
+}
+
+address, caption, cite, code, dfn, em, th, var{
+  font-style:normal;
+  font-weight:400;
+}
+
+/* 去掉列表前的标识, li 会继承，大部分网站通常用列表来很多内容，所以应该当去 */
+ul, ol{
+  list-style:none;
+}
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption, th{
+  text-align:left;
+}
+
+q:before, q:after{
+  content:'';
+}
+
+/* 统一上标和下标 */
+sub, sup{
+  font-size:75%;
+  line-height:0;
+  position:relative;
+}
+
+:root sub, :root sup{
+  vertical-align:baseline; /* for ie9 and other mordern browsers */
+}
+
+sup{
+  top:-0.5em;
+}
+
+sub{
+  bottom:-0.25em;
+}
+
+/* 让链接在 hover 状态下显示下划线 */
+a{ color:#1abc9c; }
+a:hover{ text-decoration:underline; }
+
+/* 标记，类似于手写的荧光笔的作用 */
+mark{
+  background:#fffdd1;
+  border-bottom:1px solid #ffedce;
+  padding:2px;margin:0 5px;
+}
+
+/* 代码片断 */
+pre, code{
+  font-family:Courier, "Courier New", monospace;
+  white-space:pre-wrap;
+  word-wrap:break-word;
+}
+
+pre{
+  background:#f8f8f8;
+  border:1px solid #ddd;
+  padding:1em 1.5em;
+}
+
+/* 一致化 horizonal rule */
+hr{
+  border:none;
+  border-bottom:1px solid #cfcfcf;
+  margin-bottom:10px;
+  *color:pink; *filter:chroma(color=pink);
+  height:10px;
+  *margin:-7px 0 2px;
+}
+
+/* 底部印刷体、版本等标记 */
+small, .typo-small,
+  /* 图片说明 */
+figcaption{
+  font-size:0.9em;
+  color:#888;
+}
+
+strong, b{font-weight:inherit;color:#000；}
+
+/* 可拖动文件添加拖动手势 */
+[draggable]{
+  cursor:move;
+}
+
+.clearfix:before, .clearfix:after{
+  content:"";
+  display:table;
+}
+
+.clearfix:after{
+  clear:both
+}
+
+.clearfix{
+  zoom:1
+}
+
+/* 强制文本换行 */
+.textwrap, .textwrap td, .textwrap th{
+  word-wrap:break-word;
+  word-break:break-all;
+}
+
+.textwrap-table{
+  table-layout:fixed;
+}
+
+/* 在文章中，应该还原 ul 和 ol 的样式 */
+.content ul, .content-ul{
+  margin-left: 0.2em;
+  padding-left: 1em;
+  list-style:disc;
+}
+
+.content ol, .content-ol{
+  list-style:decimal;
+  margin-left:1.9em;
+}
+
+.content li ul, .content li ol, .content-ul ul, .content-ul ol, .content-ol ul, .content-ol ol{
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:0.2em;
+  padding-left: 1em;
+}
+
+.content li ul, .content-ul ul, .content-ol ul{
+  list-style:circle;
+}
+
+/* 同 ul/ol，在文章中应用 table 基本格式 */
+.content table th, .content table td, .content-table th, .content-table td .content table caption{
+  border:1px solid #ddd;
+  padding:0.5em 1em;
+  color:#666;
+}
+
+.content table th, .content-table th{
+  background:#fbfbfb;
+}
+
+.content table thead th, .content-table thead th{
+  background:#f1f1f1;
+}
+
+.content table caption{
+  border-bottom:none;
+}
+
+/* 去除 webkit 中 input 和 textarea 的默认样式  */
+.content-input, .content-textarea{
+  -webkit-appearance:none;
+  border-radius:0;
+}
+
+/* 高亮选中 */
+::-moz-selection{
+  background:#08c;
+  color:#fff;
+}
+
+::selection{
+  background:#08c;
+  color:#fff;
+}
+
+.content-em, .content em, legend, caption{
+  color:#000;
+  font-weight:inherit;
+}
+
+/* Responsive images */
+.content img{ max-width: 100%; }
+
 
 /* ------------------ Fonts ------------------ */
 
@@ -221,7 +486,7 @@ ul.tips {
 #header #name-and-slogan,
 #preview #preview-header #preview-name-and-slogan {
   padding-top: 38px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-left: 15px;
 }
 #header #site-name,
@@ -238,7 +503,7 @@ ul.tips {
   font-weight: normal;
 }
 #header #site-slogan {
-  margin-top: 7px;
+  margin-top: 12px;
   font-size: 100%;
   word-spacing: 0.1em;
   font-style: italic;
@@ -353,6 +618,7 @@ ul.tips {
 #navigation ul.links {
   font-size: 105%;
   padding: 0.6em 0.6em 4px;
+  margin-bottom: 0;
 }
 #navigation ul.links li a {
   color: #333;
